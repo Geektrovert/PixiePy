@@ -4,5 +4,8 @@
 # src/test_turtle.py: 2
 Click == 7.0
 
-# src/experiment_2.py: 1
+# src/generate.py: 2
+ImageHash == 4.0
+
+# src/generate.py: 1
 Pillow == 5.4.1
