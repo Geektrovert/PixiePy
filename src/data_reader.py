@@ -9,7 +9,7 @@ class palette_reader:
         self.__data = []
 
 
-    def __read_from_csv__(self, path):
+    def __read_from_csv__(self, path, expression=None):
         raw_data = []
         try:
             with open(path, 'r') as csv_file:
@@ -39,6 +39,7 @@ class palette_reader:
 
     def get_palette(self):
         self.__data = self.__read_palette__(self.__path)
+
         return self.__data[0]
 
 

@@ -16,14 +16,16 @@ def print_data_size(template):
 
 
 def get_template():
-    path = "templates/pacman_ghost_template.csv"
+    #path = "templates/pacman_ghost_template.csv"
+    path = "/home/rafid/PycharmProjects/PixiePy/templates/pacman_ghost_template.csv"
     path = os.path.abspath(path)
     ghost_template = dreader.template_reader(path)
     return ghost_template.get_template()
 
 
 def get_palette():
-    path = "templates/pacman_palette.csv"
+    #path = "templates/pacman_palette.csv"
+    path = "/home/rafid/PycharmProjects/PixiePy/templates/pacman_palette.csv"
     path = os.path.abspath(path)
     ghost_palette = dreader.palette_reader(path)
     return ghost_palette.get_palette()
