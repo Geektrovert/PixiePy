@@ -134,6 +134,15 @@
                 root.manager.transition.direction = "right"
                 root.loginBtn()
 
+        Button:
+            pos_hint:{"x":0.3,"y":0.15}
+            size_hint: 0.4, 0.1
+            font_size: (root.width**2 + root.height**2) / 17**4
+            text: "Go back"
+            on_release:
+                root.manager.transition.direction = "right"
+                root.BackBtn()
+
 <InitWindow>:
     name: "init"
 
@@ -147,18 +156,20 @@
     FloatLayout:
 
         Button:
+            id: btn1
             pos_hint:{"x":0.4,"y":0.6}
-            size_hint: 0.2, 0.075
+            size_hint: 0.25, 0.12
             font_size: (root.width**2 + root.height**2) / 18**4
-            text: "Sign In"
+            background_normal: "Assets/1x/Asset 1.png"
             on_release:
                 root.actBtn1()
 
         Button:
-            pos_hint:{"x":0.4,"y":0.5}
-            size_hint: 0.2, 0.075
+            id: btn2
+            pos_hint:{"x":0.4,"y":0.4}
+            size_hint: 0.25, 0.12
             font_size: (root.width**2 + root.height**2) / 18**4
-            text: "Sign Up"
+            background_normal: "Assets/1x/Asset 2.png"
             on_release:
                 root.actBtn2()
 
