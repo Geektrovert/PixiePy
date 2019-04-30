@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8494cb2b-5cc8-4226-bd28-f17df1108671" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/PixiePy.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 10@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 11@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 12@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 13@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 14@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 15@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 1@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 22@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 23@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 24@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 25@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 26@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 27@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 28@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 29@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 2@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 30@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 31@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 32@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 33@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 6@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 7@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 8@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/Asset 9@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/down@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1.5x/save@1.5x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 31.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 33.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/Asset 9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/1x/save.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 10@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 11@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 12@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 13@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 14@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 15@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 22@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 23@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 24@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 25@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 26@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 27@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 28@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 29@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 30@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 31@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 32@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 33@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 6@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 7@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 8@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/Asset 9@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/down@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/2x/save@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 10@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 11@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 12@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 13@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 14@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 15@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 22@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 23@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 24@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 25@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 26@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 27@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 28@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 29@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 2@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 30@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 31@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 32@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 33@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 6@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 7@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 8@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/Asset 9@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/down@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/3x/save@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 10@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 11@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 12@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 13@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 14@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 15@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 1@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 22@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 23@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 24@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 25@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 26@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 27@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 28@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 29@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 2@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 30@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 31@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 32@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 33@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 6@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 7@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 8@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/Asset 9@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/down@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/4x/save@4x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 10.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 11.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 12.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 13.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 14.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 15.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 22.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 23.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 24.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 25.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 26.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 27.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 28.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 29.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 30.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 31.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 32.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 33.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 7.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 8.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/Asset 9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Assets/svg/save.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DB/Users.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ffc3b7a4008100ff.png" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/generator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/resize.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data_reader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/LoginPage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/wew.kv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="143" column="28" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>db</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/experiment_1.py" />
+        <option value="$PROJECT_DIR$/src/__init__.py" />
+        <option value="$PROJECT_DIR$/templates/pacman_ghost_template.csv" />
+        <option value="$PROJECT_DIR$/src/data_reader.py" />
+        <option value="$PROJECT_DIR$/src/generator.py" />
+        <option value="$PROJECT_DIR$/src/wew.kv" />
+        <option value="$PROJECT_DIR$/src/LoginPage.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="133" />
+    <option name="y" value="47" />
+    <option name="width" value="1400" />
+    <option name="height" value="833" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PixiePy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PixiePy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PixiePy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PixiePy" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PixiePy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PixiePy" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.LoginPage">
+    <configuration name="LoginPage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PixiePy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/LoginPage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PixiePy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/__init__.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="experiment_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PixiePy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/experiment_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="experiment_2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PixiePy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/experiment_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.LoginPage" />
+        <item itemvalue="Python.__init__" />
+        <item itemvalue="Python.experiment_1" />
+        <item itemvalue="Python.experiment_2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8494cb2b-5cc8-4226-bd28-f17df1108671" name="Default Changelist" comment="" />
+      <created>1548863117601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1548863117601</updated>
+    </task>
+    <task id="LOCAL-00001" summary="exp 1">
+      <created>1556633964273</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556633964273</updated>
+    </task>
+    <task id="LOCAL-00002" summary="login + userDB">
+      <created>1556644482142</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1556644482142</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1373" height="785" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984756" visible="true" weight="0.24962963" />
+      <window_info id="Structure" order="1" sideWeight="0.5015244" side_tool="true" weight="0.24962963" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49925926" weight="0.3292683" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3292683" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3292683" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074077" side_tool="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3292683" />
+      <window_info anchor="bottom" id="Messages" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="exp 1" />
+    <MESSAGE value="login + userDB" />
+    <option name="LAST_COMMIT_MESSAGE" value="login + userDB" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/canvas.py" />
+    <entry file="file://$PROJECT_DIR$/src/test_pillow.py" />
+    <entry file="file://$PROJECT_DIR$/src/test_turtle.py" />
+    <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python3.7/turtle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+          <folding>
+            <element signature="e#4575#4595#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/experiment_2.py" />
+    <entry file="file://$PROJECT_DIR$/src/experiment_1.py" />
+    <entry file="file://$PROJECT_DIR$/ffc3b7a4008100ff.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ebf3b7a5818181ff.png" />
+    <entry file="file://$PROJECT_DIR$/templates/pacman_palette.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ffc3b7a4008100ff.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pacman_ghost_template.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="76" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wew.kv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="143" column="28" selection-start-line="143" selection-start-column="28" selection-end-line="143" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/LoginPage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
