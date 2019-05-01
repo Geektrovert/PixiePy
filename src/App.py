@@ -14,15 +14,15 @@ from src import style_selector
 global_user = ""
 curr_layer = ""
 
-skin_color = (0.0, 0.0, 0.0, 1.0)
+skin_color = (0.0, 1.0, 1.0, 1.0)
 mouth_style = 1
 hair_style = 1
-hair_color = (0.0, 0.0, 0.0, 1.0)
-back_color = (0.0, 0.0, 0.0, 1.0)
+hair_color = (1.0, 0.0, 1.0, 1.0)
+back_color = (1.0, 1.0, 0.0, 1.0)
 beard_style = 1
-beard_color = (0.0, 0.0, 0.0, 1.0)
+beard_color = (1.0, 0.5, 0.5, 1.0)
 eyes_style = 1
-eyes_color = (0.0, 0.0, 0.0, 1.0)
+eyes_color = (0.5, 0.5, 0.0, 1.0)
 
 
 
@@ -610,6 +610,8 @@ class WorkshopWindow(Screen):
 
         img_reload()
 
+        img_reload()
+
     def upd_color(self, cocolor):
 
         if curr_layer == "hair":
@@ -657,6 +659,7 @@ def invalidForm():
 def img_reload():
     blueprint_data = load_data.get_data()
     style_selector.blueprint_data = blueprint_data
+
     style_selector.generate(blueprint_data, skin_color, mouth_style, hair_style, hair_color, back_color, beard_style, beard_color, eyes_color, eyes_style)
 
 
