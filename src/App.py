@@ -650,7 +650,3 @@ sm.current = "work"
 class MyMainApp(App):
     def build(self):
         return sm
-
-
-if __name__ == "__main__":
-    MyMainApp().run()
