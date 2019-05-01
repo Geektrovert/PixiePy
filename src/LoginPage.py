@@ -11,6 +11,16 @@ from kivy.core.window import Window
 global_user = ""
 curr_layer = ""
 curr_style = 0
+head_style = 0
+head_color = 0
+mouth_style = 0
+hair_style = 0
+hair_color = 0
+back_style = 0
+back_color = 0
+beard_style = 0
+beard_color = 0
+
 curr_color = (0.0, 0.0, 0.0)
 
 class CreateAccountWindow(Screen):
@@ -138,6 +148,22 @@ class WorkshopWindow(Screen):
     beard = ObjectProperty(None)
     back = ObjectProperty(None)
     eyes = ObjectProperty(None)
+    style = ObjectProperty(None)
+    preview = ObjectProperty(None)
+    img_name = ObjectProperty(None)
+    colorPicker = ObjectProperty(None)
+    colorPickerLabel = ObjectProperty(None)
+    colorSelectorButton = ObjectProperty(None)
+    colorPickerBox = ObjectProperty(None)
+    colorLabel = ObjectProperty(None)
+    styleLabel = ObjectProperty(None)
+    styleBox = ObjectProperty(None)
+    box1 = ObjectProperty(None)
+    box2 = ObjectProperty(None)
+    box3 = ObjectProperty(None)
+    box4 = ObjectProperty(None)
+    box5 = ObjectProperty(None)
+    box6 = ObjectProperty(None)
 
     layerList = list()
     layerList.append(hair)
@@ -161,6 +187,32 @@ class WorkshopWindow(Screen):
     #implement buttons
 
     def Shair(self, instance):
+        self.box1.background_normal = ""
+        self.box1.background_color = (1.0, 0, 0.0, 1.0)
+
+        self.box2.background_normal = ""
+        self.box2.background_color = (0.0, 1.0, 0.0, 1.0)
+
+        self.box3.background_normal = ""
+        self.box3.background_color = (0.0, 0.0, 1.0, 1.0)
+
+        self.box4.background_normal = ""
+        self.box4.background_color = (1.0, 1.0, 0.0, 1.0)
+
+        self.box5.background_normal = ""
+        self.box5.background_color = (1.0, 0.0, 1.0, 1.0)
+
+        self.box6.background_normal = ""
+        self.box6.background_color = (0.0, 1.0, 1.0, 1.0)
+
+        self.colorPicker.opacity = 1
+        self.colorPickerLabel.opacity = 1
+        self.colorSelectorButton.opacity = 1
+        self.colorPickerBox.opacity = 1
+        self.colorLabel.opacity = 1
+        self.styleLabel.opacity = 1
+        self.styleBox.opacity = 1
+
         curr_layer = "hair"
         self.hair.background_normal = ""
         self.hair.background_color = (0.8, 0.8, 0.0, 1.0)
@@ -187,6 +239,32 @@ class WorkshopWindow(Screen):
         self.eyes.color = (0.8, 0.8, 0.0, 1.0)
 
     def Sskin(self, instance):
+        self.box1.background_normal = ""
+        self.box1.background_color = (1.0, 0, 0.0, 1.0)
+
+        self.box2.background_normal = ""
+        self.box2.background_color = (0.0, 1.0, 0.0, 1.0)
+
+        self.box3.background_normal = ""
+        self.box3.background_color = (0.0, 0.0, 1.0, 1.0)
+
+        self.box4.background_normal = ""
+        self.box4.background_color = (1.0, 1.0, 0.0, 1.0)
+
+        self.box5.background_normal = ""
+        self.box5.background_color = (1.0, 0.0, 1.0, 1.0)
+
+        self.box6.background_normal = ""
+        self.box6.background_color = (0.0, 1.0, 1.0, 1.0)
+
+        self.colorPicker.opacity = 1
+        self.colorPickerLabel.opacity = 1
+        self.colorSelectorButton.opacity = 1
+        self.colorPickerBox.opacity = 1
+        self.colorLabel.opacity = 1
+        self.styleLabel.opacity = 1
+        self.styleBox.opacity = 1
+
         curr_layer = "skin"
 
         self.hair.background_normal = ""
@@ -213,7 +291,58 @@ class WorkshopWindow(Screen):
         self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
         self.eyes.color = (0.8, 0.8, 0.0, 1.0)
 
+        self.styleLabel.opacity = 0
+        self.styleBox.opacity = 0
+        self.colorPicker.opacity = 0
+        self.colorPickerLabel.opacity = 0
+        self.colorSelectorButton.opacity = 0
+
+        self.box1.background_normal = ""
+        self.box1.background_color = (0.9686, 0.851, 0.8196, 1.0)
+
+        self.box2.background_normal = ""
+        self.box2.background_color = (0.9, 0.8, 0.76, 1.0)
+
+        self.box3.background_normal = ""
+        self.box3.background_color = (0.83, 0.73, 0.69, 1.0)
+
+        self.box4.background_normal = ""
+        self.box4.background_color = (0.76, 0.66, 0.62, 1.0)
+
+        self.box5.background_normal = ""
+        self.box5.background_color = (0.69, 0.59, 0.55, 1.0)
+
+        self.box6.background_normal = ""
+        self.box6.background_color = (0.62, 0.52, 0.48, 1.0)
+
+
     def Smouth(self, instance):
+        self.box1.background_normal = ""
+        self.box1.background_color = (1.0, 0, 0.0, 1.0)
+
+        self.box2.background_normal = ""
+        self.box2.background_color = (0.0, 1.0, 0.0, 1.0)
+
+        self.box3.background_normal = ""
+        self.box3.background_color = (0.0, 0.0, 1.0, 1.0)
+
+        self.box4.background_normal = ""
+        self.box4.background_color = (1.0, 1.0, 0.0, 1.0)
+
+        self.box5.background_normal = ""
+        self.box5.background_color = (1.0, 0.0, 1.0, 1.0)
+
+        self.box6.background_normal = ""
+        self.box6.background_color = (0.0, 1.0, 1.0, 1.0)
+
+        self.colorPicker.opacity = 1
+        self.colorPickerLabel.opacity = 1
+        self.colorSelectorButton.opacity = 1
+        self.colorPickerBox.opacity = 1
+        self.colorLabel.opacity = 1
+        self.styleLabel.opacity = 1
+        self.styleBox.opacity = 1
+
         curr_layer = "mouth"
         self.hair.background_normal = ""
         self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
@@ -239,8 +368,41 @@ class WorkshopWindow(Screen):
         self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
         self.eyes.color = (0.8, 0.8, 0.0, 1.0)
 
+        self.colorPicker.opacity = 0
+        self.colorPickerLabel.opacity = 0
+        self.colorSelectorButton.opacity = 0
+        self.colorPickerBox.opacity = 0
+        self.colorLabel.opacity = 0
+
     def Sbeard(self, instance):
+        self.box1.background_normal = ""
+        self.box1.background_color = (1.0, 0, 0.0, 1.0)
+
+        self.box2.background_normal = ""
+        self.box2.background_color = (0.0, 1.0, 0.0, 1.0)
+
+        self.box3.background_normal = ""
+        self.box3.background_color = (0.0, 0.0, 1.0, 1.0)
+
+        self.box4.background_normal = ""
+        self.box4.background_color = (1.0, 1.0, 0.0, 1.0)
+
+        self.box5.background_normal = ""
+        self.box5.background_color = (1.0, 0.0, 1.0, 1.0)
+
+        self.box6.background_normal = ""
+        self.box6.background_color = (0.0, 1.0, 1.0, 1.0)
+
+        self.colorPicker.opacity = 1
+        self.colorPickerLabel.opacity = 1
+        self.colorSelectorButton.opacity = 1
+        self.colorPickerBox.opacity = 1
+        self.colorLabel.opacity = 1
+        self.styleLabel.opacity = 1
+        self.styleBox.opacity = 1
+
         curr_layer = "beard"
+
         self.hair.background_normal = ""
         self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
         self.hair.color = (0.8, 0.8, 0.0, 1.0)
@@ -266,7 +428,34 @@ class WorkshopWindow(Screen):
         self.eyes.color = (0.8, 0.8, 0.0, 1.0)
 
     def Sback(self, instance):
+        self.box1.background_normal = ""
+        self.box1.background_color = (1.0, 0, 0.0, 1.0)
+
+        self.box2.background_normal = ""
+        self.box2.background_color = (0.0, 1.0, 0.0, 1.0)
+
+        self.box3.background_normal = ""
+        self.box3.background_color = (0.0, 0.0, 1.0, 1.0)
+
+        self.box4.background_normal = ""
+        self.box4.background_color = (1.0, 1.0, 0.0, 1.0)
+
+        self.box5.background_normal = ""
+        self.box5.background_color = (1.0, 0.0, 1.0, 1.0)
+
+        self.box6.background_normal = ""
+        self.box6.background_color = (0.0, 1.0, 1.0, 1.0)
+
+        self.colorPicker.opacity = 1
+        self.colorPickerLabel.opacity = 1
+        self.colorSelectorButton.opacity = 1
+        self.colorPickerBox.opacity = 1
+        self.colorLabel.opacity = 1
+        self.styleLabel.opacity = 1
+        self.styleBox.opacity = 1
+
         curr_layer = "back"
+
         self.hair.background_normal = ""
         self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
         self.hair.color = (0.8, 0.8, 0.0, 1.0)
@@ -292,7 +481,34 @@ class WorkshopWindow(Screen):
         self.eyes.color = (0.8, 0.8, 0.0, 1.0)
 
     def Seyes(self, instance):
+        self.box1.background_normal = ""
+        self.box1.background_color = (1.0, 0, 0.0, 1.0)
+
+        self.box2.background_normal = ""
+        self.box2.background_color = (0.0, 1.0, 0.0, 1.0)
+
+        self.box3.background_normal = ""
+        self.box3.background_color = (0.0, 0.0, 1.0, 1.0)
+
+        self.box4.background_normal = ""
+        self.box4.background_color = (1.0, 1.0, 0.0, 1.0)
+
+        self.box5.background_normal = ""
+        self.box5.background_color = (1.0, 0.0, 1.0, 1.0)
+
+        self.box6.background_normal = ""
+        self.box6.background_color = (0.0, 1.0, 1.0, 1.0)
+
+        self.colorPicker.opacity = 1
+        self.colorPickerLabel.opacity = 1
+        self.colorSelectorButton.opacity = 1
+        self.colorPickerBox.opacity = 1
+        self.colorLabel.opacity = 1
+        self.styleLabel.opacity = 1
+        self.styleBox.opacity = 1
+
         curr_layer = "eyes"
+
         self.hair.background_normal = ""
         self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
         self.hair.color = (0.8, 0.8, 0.0, 1.0)
@@ -317,29 +533,38 @@ class WorkshopWindow(Screen):
         self.eyes.background_color = (0.8, 0.8, 0.0, 1.0)
         self.eyes.color = (0.3412, 0.2392, 0.3451, 1)
 
-    def colorBox1(self):
-        mod_color = (1.0, 0.0, 0.0)
+    def colorBox1(self, instance):
+        mod_color = instance.background_color
+
         img_reload()
 
-    def colorBox2(self):
-        mod_color = (0.0, 1.0, 0.0)
+    def colorBox2(self, instance):
+        mod_color = instance.background_color
+
         img_reload()
 
-    def colorBox3(self):
-        mod_color = (0.0, 0.0, 1.0)
+    def colorBox3(self, instance):
+        mod_color = instance.background_color
+
         img_reload()
 
-    def colorBox4(self):
-        mod_color = (1.0, 1.0, 0.0)
+    def colorBox4(self, instance):
+        mod_color = instance.background_color
+
         img_reload()
 
-    def colorBox5(self):
-        mod_color = (1.0, 0.0, 1.0)
+    def colorBox5(self, instance):
+        mod_color = instance.background_color
+
         img_reload()
 
-    def colorBox6(self):
-        mod_color = (0.0, 1.0, 1.0)
+    def colorBox6(self, instance):
+        mod_color = instance.background_color
+
         img_reload()
+
+    def colorSelected(self):
+        pass
 
 
 class SaveWindow(Screen):

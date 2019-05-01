@@ -192,7 +192,19 @@
     style: style
     preview: preview
     img_name: img_name
-    colorValue: colorValue
+    colorPicker: colorPicker
+    colorPickerLabel: colorPickerLabel
+    colorSelectorButton: colorSelectorButton
+    colorPickerBox: colorPickerBox
+    colorLabel: colorLabel
+    styleLabel: styleLabel
+    styleBox: styleBox
+    box1: box1
+    box2: box2
+    box3: box3
+    box4: box4
+    box5: box5
+    box6: box6
 
     canvas.before:
         Color:
@@ -314,6 +326,7 @@
             font_size: "25sp"
             size_hint: 0.1, 0.1
             halign: 'left'
+            id: styleLabel
 
         BoxLayout:
 
@@ -326,6 +339,7 @@
 
             size_hint: 0.3, 0.2
             pos_hint: {"x":0.02, "y":0.43}
+            id: styleBox
 
             ScrollView:
                 GridLayout:
@@ -345,6 +359,7 @@
             font_size: "25sp"
             size_hint: 0.1, 0.1
             halign: 'left'
+            id: colorLabel
 
         BoxLayout:
 
@@ -360,56 +375,64 @@
             orientation: "horizontal"
             spacing: 5
             padding: 8
+            id: colorPickerBox
 
             Button:
+                id: box1
                 background_normal: ""
                 background_color: 1.0, 0.0, 0.0, 1
                 size_hint: 0.15, 1
 
                 on_release:
-                    root.colorBox1()
+                    root.colorBox1(self)
 
             Button:
+                id: box2
                 background_normal: ""
                 background_color: 0.0, 1.0, 0.0, 1
                 size_hint: 0.15, 1
 
                 on_release:
-                    root.colorBox2()
+                    root.colorBox2(self)
 
             Button:
+                id: box3
                 background_normal: ""
                 background_color: 0.0, 0.0, 1.0, 1
                 size_hint: 0.15, 1
 
                 on_release:
-                    root.colorBox3()
+                    root.colorBox3(self)
 
             Button:
+                id: box4
                 background_normal: ""
                 background_color: 1.0, 1.0, 0.0, 1
                 size_hint: 0.15, 1
 
                 on_release:
-                    root.colorBox4()
+                    root.colorBox4(self)
 
             Button:
+                id: box5
                 background_normal: ""
                 background_color: 1.0, 0.0, 1.0, 1
                 size_hint: 0.15, 1
 
                 on_release:
-                    root.colorBox5()
+                    root.colorBox5(self)
 
             Button:
+                id: box6
                 background_normal: ""
                 background_color: 0.0, 1.0, 1.0, 1
                 size_hint: 0.15, 1
 
                 on_release:
-                    root.colorBox6()
+                    root.colorBox6(self)
 
         Label:
+            id: colorPickerLabel
             text: "Value: "
             font_name: "Roboto-Bold"
             pos_hint: {"x": 0.02, "y": 0.1}
@@ -418,7 +441,7 @@
             halign: 'left'
 
         TextInput:
-            id: colorValue
+            id: colorPicker
             pos_hint: {"x": 0.115, "y": 0.11}
             size_hint: 0.2, 0.07
             font_size: (root.width**2 + root.height**2) / 14.5**4
@@ -441,6 +464,9 @@
             background_color: 0.3412, 0.2392, 0.3451, 1
             color: 0.8, 0.8, 0.0, 1.0
             font_size: (root.width**2 + root.height**2) / 16**4
+            id: colorSelectorButton
+            on_release:
+                root.colorSelected()
 
         Label:
 
