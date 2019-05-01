@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8494cb2b-5cc8-4226-bd28-f17df1108671" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/temp.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ffc3b7a4008100ff.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/wew.kv" beforeDir="false" afterPath="$PROJECT_DIR$/src/wew.kv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LoginPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="1365">
               <caret line="99" column="74" selection-start-line="99" selection-start-column="74" selection-end-line="99" selection-end-column="74" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
@@ -75,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wew.kv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="229" column="22" lean-forward="true" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="22" />
+            <state relative-caret-position="314">
+              <caret line="233" column="46" selection-start-line="233" selection-start-column="46" selection-end-line="233" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -288,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556644858752</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gallery">
+      <created>1556695419074</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556695419075</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -317,7 +322,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="exp 1" />
     <MESSAGE value="login + userDB" />
-    <option name="LAST_COMMIT_MESSAGE" value="login + userDB" />
+    <MESSAGE value="gallery" />
+    <option name="LAST_COMMIT_MESSAGE" value="gallery" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/canvas.py" />
@@ -363,9 +369,7 @@
     <entry file="file://$PROJECT_DIR$/templates/pacman_palette.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ffc3b7a4008100ff.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ffc3b7a4008100ff.png" />
     <entry file="file://$PROJECT_DIR$/templates/pacman_ghost_template.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -412,7 +416,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LoginPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="1365">
           <caret line="99" column="74" selection-start-line="99" selection-start-column="74" selection-end-line="99" selection-end-column="74" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
@@ -422,8 +426,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wew.kv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="229" column="22" lean-forward="true" selection-start-line="229" selection-start-column="22" selection-end-line="229" selection-end-column="22" />
+        <state relative-caret-position="314">
+          <caret line="233" column="46" selection-start-line="233" selection-start-column="46" selection-end-line="233" selection-end-column="46" />
         </state>
       </provider>
     </entry>
