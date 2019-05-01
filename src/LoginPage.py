@@ -128,6 +128,23 @@ class InitWindow(Screen):
 
         sm.current = "create"
 
+class WorkshopWindow(Screen):
+
+    def __init__(self, **kwargs):
+        super(WorkshopWindow,self).__init__(**kwargs)
+
+        #implement initial state
+
+    #implement buttons
+
+class SaveWindow(Screen):
+
+    def __init__(self, **kwargs):
+        super(SaveWindow,self).__init__(**kwargs)
+
+        #implement initial state
+
+    #implement buttons
 
 class WindowManager(ScreenManager):
     pass
@@ -152,11 +169,11 @@ kv = Builder.load_file("wew.kv")
 
 sm = WindowManager()
 
-screens = [InitWindow(name="init"),LoginWindow(name="login"), CreateAccountWindow(name="create"),MainWindow(name="main")]
+screens = [SaveWindow(name="save"), WorkshopWindow(name="work"),InitWindow(name="init"),LoginWindow(name="login"), CreateAccountWindow(name="create"),MainWindow(name="main")]
 for screen in screens:
     sm.add_widget(screen)
 
-sm.current = "main"
+sm.current = "save"
 
 
 class MyMainApp(App):

@@ -155,23 +155,320 @@
 
     FloatLayout:
 
+        AsyncImage:
+            source: "Assets/4x/Asset 7@4x.png"
+            size_hint: 0.5, 0.3
+            pos_hint: {"x":0.255, "y": 0.7}
+
+
+
         Button:
             id: btn1
-            pos_hint:{"x":0.4,"y":0.6}
+            pos_hint:{"x":0.4,"y":0.55}
             size_hint: 0.25, 0.12
             font_size: (root.width**2 + root.height**2) / 18**4
-            background_normal: "Assets/4x/Asset 1@4x.png"
+            background_normal: "Assets/1x/Asset 1.png"
             on_release:
                 root.actBtn1()
 
         Button:
             id: btn2
-            pos_hint:{"x":0.4,"y":0.4}
+            pos_hint:{"x":0.4,"y":0.35}
             size_hint: 0.25, 0.12
             font_size: (root.width**2 + root.height**2) / 18**4
-            background_normal: "Assets/4x/Asset 2@4x.png"
+            background_normal: "Assets/1x/Asset 2.png"
             on_release:
                 root.actBtn2()
+
+<WorkshopWindow>:
+
+    name: "work"
+    hair : hair
+    eyes: eyes
+    cloth: cloth
+    back: back
+    beard: beard
+    skin: skin
+    style: style
+    preview: preview
+
+    canvas.before:
+        Color:
+            rgba: 0.3412, 0.2392, 0.3451, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    FloatLayout:
+
+        Label:
+
+            text: "LAYER"
+            font_name: "Roboto-Bold"
+            pos_hint: {"x": 0.0, "y": 0.8}
+            font_size: "25sp"
+            size_hint: 0.1, 0.1
+            halign: 'left'
+
+        GridLayout:
+
+            rows: 2
+            cols: 3
+
+            pos_hint: {"x": 0.02, "y": 0.6}
+            size_hint: 0.3, 0.2
+
+            Button:
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0.0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+
+                id: hair
+                text: "HAIR"
+                font_size: (root.width**2 + root.height**2) / 16**4
+            Button:
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+                id: beard
+                text: "BEARD"
+                font_size: (root.width**2 + root.height**2) / 16**4
+            Button:
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+                id: eyes
+                text: "EYES"
+                font_size: (root.width**2 + root.height**2) / 16**4
+            Button:
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+                id: cloth
+                text: "CLOTH"
+                font_size: (root.width**2 + root.height**2) / 16**4
+            Button:
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+                id: skin
+                text: "SKIN"
+                font_size: (root.width**2 + root.height**2) / 16**4
+            Button:
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+                id: back
+                text: "BACK"
+                font_size: (root.width**2 + root.height**2) / 16**4
+
+        Label:
+
+            text: "STYLE"
+            font_name: "Roboto-Bold"
+            pos_hint: {"x": 0.0, "y": 0.5}
+            font_size: "25sp"
+            size_hint: 0.1, 0.1
+            halign: 'left'
+
+        BoxLayout:
+
+            canvas.before:
+                Color:
+                    rgba: 1.0, 1.0, 1.0, 1
+                Line:
+                    width: 2
+                    rectangle: self.x, self.y, self.width, self.height
+
+            size_hint: 0.3, 0.2
+            pos_hint: {"x":0.02, "y":0.3}
+
+            ScrollView:
+                GridLayout:
+                    id: style
+                    size_hint_x: None
+                    rows: 1
+                    col_default_width: root.width*0.4
+                    width: self.minimum_width
+                    spacing: 15
+                    padding: 10
+
+        Label:
+
+            text: "Color"
+            font_name: "Roboto-Bold"
+            pos_hint: {"x": 0.0, "y": 0.2}
+            font_size: "25sp"
+            size_hint: 0.1, 0.1
+            halign: 'left'
+
+        BoxLayout:
+
+            canvas.before:
+                Color:
+                    rgba: 1.0, 1.0, 1.0, 1
+                Line:
+                    width: 2
+                    rectangle: self.x, self.y, self.width, self.height
+
+            size_hint: 0.3, 0.1
+            pos_hint: {"x":0.02, "y":0.1}
+
+            ScrollView:
+                GridLayout:
+                    id: color
+                    size_hint_x: None
+                    rows: 1
+                    col_default_width: root.width*0.4
+                    width: self.minimum_width
+                    spacing: 15
+                    padding: 10
+
+        Label:
+
+            text: "Image Name"
+            id: img_name
+            font_name: "Roboto-Bold"
+            pos_hint: {"x": 0.5, "y": 0.9}
+            font_size: "25sp"
+            size_hint: 0.1, 0.1
+            halign: 'left'
+
+        BoxLayout:
+
+            pos_hint: {"x":0.35, "y": 0.3}
+            size_hint: 0.45, 0.55
+
+            AsyncImage:
+                id: preview
+                source: "temp.png"
+                allow_stretch: True
+                size_hint: 1.0, 1.0
+
+                canvas:
+                    Color:
+                        rgba: 1.0, 1.0, 1.0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+
+        Button:
+            id: saveBtn
+            pos_hint:{"x":0.4,"y":0.1}
+            size_hint: 0.2, 0.1
+            background_normal: "Assets/1x/save.png"
+            on_release:
+                root.save()
+
+        Button:
+            id: downloadBtn
+            pos_hint:{"x":0.7,"y":0.1}
+            size_hint: 0.2, 0.1
+            background_normal: "Assets/1x/down.png"
+            on_release:
+                root.down()
+
+<SaveWindow>:
+    name: "save"
+
+    dimg: dimg
+    size_input: size_input
+
+    canvas.before:
+        Color:
+            rgba: 0.3412, 0.2392, 0.3451, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+
+    FloatLayout:
+
+        AsyncImage:
+            source: "Assets/download.png"
+            size_hint: 0.5, 0.3
+            pos_hint: {"x":0.25, "y": 0.7}
+
+        BoxLayout:
+
+            pos_hint: {"x":0.25, "y": 0.25}
+            size_hint: 0.5, 0.5
+
+            AsyncImage:
+                id: dimg
+                source: "temp.png"
+                allow_stretch: True
+                size_hint: 1.0, 1.0
+
+                canvas:
+                    Color:
+                        rgba: 1.0, 1.0, 1.0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+
+        Button:
+
+            background_normal: "Assets/1x/Asset 9.png"
+            pos_hint: {"x": 0.02, "y": 0.3}
+            size_hint: 0.2, 0.12
+            on_release:
+                root.jpg()
+
+        Button:
+
+            background_normal: "Assets/1x/Asset 10.png"
+            pos_hint: {"x": 0.02, "y": 0.6}
+            size_hint: 0.2, 0.12
+            on_release:
+                root.png()
+
+        Button:
+
+            background_normal: "Assets/1x/Asset 11.png"
+            pos_hint: {"x": 0.78, "y": 0.3}
+            size_hint: 0.2, 0.12
+            on_release:
+                root.bmp()
+
+        Button:
+
+            background_normal: "Assets/1x/Asset 12.png"
+            pos_hint: {"x": 0.78, "y": 0.6}
+            size_hint: 0.2, 0.12
+            on_release:
+                root.jpeg()
+
+        AsyncImage:
+            source: "Assets/1x/Asset 8.png"
+            size_hint: 0.15, 0.1
+            pos_hint: {"x":0.3, "y": 0.1}
+
+        TextInput:
+            id: size_input
+            text: '400'
+            font_size: (root.width**2 + root.height**2) / 14**4
+            multiline: False
+            pos_hint: {"x": 0.46, "y":0.1}
+            size_hint: 0.15, 0.1
 
 
 
