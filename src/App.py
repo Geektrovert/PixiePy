@@ -8,6 +8,9 @@ from kivy.uix.button import Button
 from kivy.uix.image import AsyncImage
 from kivy.core.window import Window
 
+from src import load_data
+from src import style_selector
+
 global_user = ""
 curr_layer = ""
 
@@ -18,6 +21,8 @@ hair_color = (0.0, 0.0, 0.0, 1.0)
 back_color = (0.0, 0.0, 0.0, 1.0)
 beard_style = 0
 beard_color = (0.0, 0.0, 0.0, 1.0)
+eyes_style = 0
+eyes_color = (0.0, 0.0, 0.0, 1.0)
 
 
 
@@ -603,6 +608,12 @@ class WorkshopWindow(Screen):
 
         if curr_layer == "hair":
             hair_color = cocolor
+        if curr_layer == "beard":
+            beard_color = cocolor
+        if curr_layer == "eyes":
+            eyes_color = cocolor
+        if curr_layer == "back":
+            back_color = cocolor
 
 class SaveWindow(Screen):
 
@@ -632,8 +643,8 @@ def invalidForm():
     pop.open()
 
 def img_reload():
-
-    print("Image Reload hocche")
+    blueprint_data = load_data.get_data()
+    style_selector.generate(blueprint_data, skin_color, mouth_style, hair_style, hair_color, back_color, beard_style, beard_color, eyes_color, eyes_style)
 
 
 kv = Builder.load_file("wew.kv")

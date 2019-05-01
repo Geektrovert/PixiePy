@@ -1,5 +1,7 @@
 from src import reverse
 from src import App
+from src import load_data
+import time
 import os
 import PIL
 
@@ -12,5 +14,12 @@ def extract():
     files = get_file_list()
     reverse.read_blueprint_files(files)
 
-if __name__ == "__main__":
+
+def run_app():
     App.MyMainApp().run()
+
+def test_data_load():
+    load_data.get_data()
+
+if __name__ == "__main__":
+    run_app()
