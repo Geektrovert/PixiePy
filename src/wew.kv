@@ -185,12 +185,14 @@
     name: "work"
     hair : hair
     eyes: eyes
-    cloth: cloth
     back: back
+    mouth: mouth
     beard: beard
     skin: skin
     style: style
     preview: preview
+    img_name: img_name
+    colorValue: colorValue
 
     canvas.before:
         Color:
@@ -205,7 +207,7 @@
 
             text: "LAYER"
             font_name: "Roboto-Bold"
-            pos_hint: {"x": 0.0, "y": 0.8}
+            pos_hint: {"x": 0.0, "y": 0.89}
             font_size: "25sp"
             size_hint: 0.1, 0.1
             halign: 'left'
@@ -215,7 +217,7 @@
             rows: 2
             cols: 3
 
-            pos_hint: {"x": 0.02, "y": 0.6}
+            pos_hint: {"x": 0.02, "y": 0.70}
             size_hint: 0.3, 0.2
 
             Button:
@@ -227,8 +229,12 @@
                         rectangle: self.x, self.y, self.width, self.height
 
                 id: hair
+                background_normal: ""
+                background_color: 0.3412, 0.2392, 0.3451, 1
                 text: "HAIR"
                 font_size: (root.width**2 + root.height**2) / 16**4
+                on_release:
+                    root.Shair(self)
             Button:
                 canvas.before:
                     Color:
@@ -237,8 +243,12 @@
                         width: 2
                         rectangle: self.x, self.y, self.width, self.height
                 id: beard
+                background_normal: ""
+                background_color: 0.3412, 0.2392, 0.3451, 1
                 text: "BEARD"
                 font_size: (root.width**2 + root.height**2) / 16**4
+                on_release:
+                    root.Sbeard(self)
             Button:
                 canvas.before:
                     Color:
@@ -247,28 +257,12 @@
                         width: 2
                         rectangle: self.x, self.y, self.width, self.height
                 id: eyes
+                background_normal: ""
+                background_color: 0.3412, 0.2392, 0.3451, 1
                 text: "EYES"
                 font_size: (root.width**2 + root.height**2) / 16**4
-            Button:
-                canvas.before:
-                    Color:
-                        rgba: 0.8, 0.8, 0, 1
-                    Line:
-                        width: 2
-                        rectangle: self.x, self.y, self.width, self.height
-                id: cloth
-                text: "CLOTH"
-                font_size: (root.width**2 + root.height**2) / 16**4
-            Button:
-                canvas.before:
-                    Color:
-                        rgba: 0.8, 0.8, 0, 1
-                    Line:
-                        width: 2
-                        rectangle: self.x, self.y, self.width, self.height
-                id: skin
-                text: "SKIN"
-                font_size: (root.width**2 + root.height**2) / 16**4
+                on_release:
+                    root.Seyes(self)
             Button:
                 canvas.before:
                     Color:
@@ -277,14 +271,46 @@
                         width: 2
                         rectangle: self.x, self.y, self.width, self.height
                 id: back
+                background_normal: ""
+                background_color: 0.3412, 0.2392, 0.3451, 1
                 text: "BACK"
                 font_size: (root.width**2 + root.height**2) / 16**4
+                on_release:
+                    root.Sback(self)
+            Button:
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+                id: skin
+                background_normal: ""
+                background_color: 0.3412, 0.2392, 0.3451, 1
+                text: "SKIN"
+                font_size: (root.width**2 + root.height**2) / 16**4
+                on_release:
+                    root.Sskin(self)
+            Button:
+                canvas.before:
+                    Color:
+                        rgba: 0.8, 0.8, 0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+                id: mouth
+                background_normal: ""
+                background_color: 0.3412, 0.2392, 0.3451, 1
+                text: "MOUTH"
+                font_size: (root.width**2 + root.height**2) / 16**4
+                on_release:
+                    root.Smouth(self)
 
         Label:
 
             text: "STYLE"
             font_name: "Roboto-Bold"
-            pos_hint: {"x": 0.0, "y": 0.5}
+            pos_hint: {"x": 0.0, "y": 0.62}
             font_size: "25sp"
             size_hint: 0.1, 0.1
             halign: 'left'
@@ -299,7 +325,7 @@
                     rectangle: self.x, self.y, self.width, self.height
 
             size_hint: 0.3, 0.2
-            pos_hint: {"x":0.02, "y":0.3}
+            pos_hint: {"x":0.02, "y":0.43}
 
             ScrollView:
                 GridLayout:
@@ -315,7 +341,7 @@
 
             text: "Color"
             font_name: "Roboto-Bold"
-            pos_hint: {"x": 0.0, "y": 0.2}
+            pos_hint: {"x": 0.0, "y": 0.35}
             font_size: "25sp"
             size_hint: 0.1, 0.1
             halign: 'left'
@@ -330,17 +356,91 @@
                     rectangle: self.x, self.y, self.width, self.height
 
             size_hint: 0.3, 0.1
-            pos_hint: {"x":0.02, "y":0.1}
+            pos_hint: {"x":0.02, "y":0.25}
+            orientation: "horizontal"
+            spacing: 5
+            padding: 8
 
-            ScrollView:
-                GridLayout:
-                    id: color
-                    size_hint_x: None
-                    rows: 1
-                    col_default_width: root.width*0.4
-                    width: self.minimum_width
-                    spacing: 15
-                    padding: 10
+            Button:
+                background_normal: ""
+                background_color: 1.0, 0.0, 0.0, 1
+                size_hint: 0.15, 1
+
+                on_release:
+                    root.colorBox1()
+
+            Button:
+                background_normal: ""
+                background_color: 0.0, 1.0, 0.0, 1
+                size_hint: 0.15, 1
+
+                on_release:
+                    root.colorBox2()
+
+            Button:
+                background_normal: ""
+                background_color: 0.0, 0.0, 1.0, 1
+                size_hint: 0.15, 1
+
+                on_release:
+                    root.colorBox3()
+
+            Button:
+                background_normal: ""
+                background_color: 1.0, 1.0, 0.0, 1
+                size_hint: 0.15, 1
+
+                on_release:
+                    root.colorBox4()
+
+            Button:
+                background_normal: ""
+                background_color: 1.0, 0.0, 1.0, 1
+                size_hint: 0.15, 1
+
+                on_release:
+                    root.colorBox5()
+
+            Button:
+                background_normal: ""
+                background_color: 0.0, 1.0, 1.0, 1
+                size_hint: 0.15, 1
+
+                on_release:
+                    root.colorBox6()
+
+        Label:
+            text: "Value: "
+            font_name: "Roboto-Bold"
+            pos_hint: {"x": 0.02, "y": 0.1}
+            font_size: "25sp"
+            size_hint: 0.1, 0.1
+            halign: 'left'
+
+        TextInput:
+            id: colorValue
+            pos_hint: {"x": 0.115, "y": 0.11}
+            size_hint: 0.2, 0.07
+            font_size: (root.width**2 + root.height**2) / 14.5**4
+            multiline: False
+
+        Button:
+
+            canvas:
+                Color:
+                    rgba: 1.0, 1.0, 1.0, 1
+                Line:
+                    width: 2
+                    rectangle: self.x, self.y, self.width, self.height
+
+            text: "Apply Color"
+            font_name: "Roboto-Bold"
+            pos_hint: {"x": 0.115, "y": 0.02}
+            size_hint: 0.2, 0.07
+            background_normal: ""
+            background_color: 0.3412, 0.2392, 0.3451, 1
+            color: 0.8, 0.8, 0.0, 1.0
+            font_size: (root.width**2 + root.height**2) / 16**4
 
         Label:
 
@@ -354,7 +454,7 @@
 
         BoxLayout:
 
-            pos_hint: {"x":0.35, "y": 0.3}
+            pos_hint: {"x":0.45, "y": 0.3}
             size_hint: 0.45, 0.55
 
             AsyncImage:
@@ -362,13 +462,6 @@
                 source: "temp.png"
                 allow_stretch: True
                 size_hint: 1.0, 1.0
-
-                canvas:
-                    Color:
-                        rgba: 1.0, 1.0, 1.0, 1
-                    Line:
-                        width: 2
-                        rectangle: self.x, self.y, self.width, self.height
 
         Button:
             id: saveBtn

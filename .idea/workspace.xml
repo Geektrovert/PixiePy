@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8494cb2b-5cc8-4226-bd28-f17df1108671" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Assets/download.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/1x/down.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/1x/down.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Assets/1x/save.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/1x/save.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wew.kv" beforeDir="false" afterPath="$PROJECT_DIR$/src/wew.kv" afterDir="false" />
     </list>
@@ -63,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/LoginPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="183" column="26" lean-forward="true" selection-start-line="183" selection-start-column="26" selection-end-line="183" selection-end-column="26" />
+            <state relative-caret-position="511">
+              <caret line="173" column="42" selection-start-line="173" selection-start-column="42" selection-end-line="173" selection-end-column="42" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -75,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/wew.kv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="455" column="32" lean-forward="true" selection-start-line="455" selection-start-column="32" selection-end-line="455" selection-end-column="32" />
+            <state relative-caret-position="529">
+              <caret line="484" column="14" lean-forward="true" selection-start-line="484" selection-start-column="14" selection-end-line="484" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -94,7 +95,18 @@
     <findStrings>
       <find>db</find>
       <find>Mymain</find>
+      <find>color:</find>
+      <find>add</find>
+      <find>apend</find>
+      <find>STYLE</find>
+      <find>cloth</find>
     </findStrings>
+    <replaceStrings>
+      <replace>color=</replace>
+      <replace>appent</replace>
+      <replace>append</replace>
+      <replace>back</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,6 +119,7 @@
         <option value="$PROJECT_DIR$/templates/pacman_ghost_template.csv" />
         <option value="$PROJECT_DIR$/src/data_reader.py" />
         <option value="$PROJECT_DIR$/src/generator.py" />
+        <option value="$PROJECT_DIR$/src/test.py" />
         <option value="$PROJECT_DIR$/src/LoginPage.py" />
         <option value="$PROJECT_DIR$/src/wew.kv" />
       </list>
@@ -123,7 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,6 +163,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,11 +322,19 @@
       <option name="project" value="LOCAL" />
       <updated>1556695946853</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="basically the UI">
+      <created>1556716171728</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1556716171729</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1373" height="785" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984756" visible="true" weight="0.24962963" />
       <window_info id="Structure" order="1" sideWeight="0.5015244" side_tool="true" weight="0.24962963" />
@@ -340,7 +361,8 @@
     <MESSAGE value="login + userDB" />
     <MESSAGE value="gallery" />
     <MESSAGE value="gallery 2?" />
-    <option name="LAST_COMMIT_MESSAGE" value="gallery 2?" />
+    <MESSAGE value="basically the UI" />
+    <option name="LAST_COMMIT_MESSAGE" value="basically the UI" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/canvas.py" />
@@ -394,6 +416,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test.py" />
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -433,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LoginPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="183" column="26" lean-forward="true" selection-start-line="183" selection-start-column="26" selection-end-line="183" selection-end-column="26" />
+        <state relative-caret-position="511">
+          <caret line="173" column="42" selection-start-line="173" selection-start-column="42" selection-end-line="173" selection-end-column="42" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
@@ -443,8 +466,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/wew.kv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="455" column="32" lean-forward="true" selection-start-line="455" selection-start-column="32" selection-end-line="455" selection-end-column="32" />
+        <state relative-caret-position="529">
+          <caret line="484" column="14" lean-forward="true" selection-start-line="484" selection-start-column="14" selection-end-line="484" selection-end-column="14" />
         </state>
       </provider>
     </entry>

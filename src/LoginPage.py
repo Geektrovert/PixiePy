@@ -9,7 +9,9 @@ from kivy.uix.image import AsyncImage
 from kivy.core.window import Window
 
 global_user = ""
-
+curr_layer = ""
+curr_style = 0
+curr_color = (0.0, 0.0, 0.0)
 
 class CreateAccountWindow(Screen):
     namee = ObjectProperty(None)
@@ -130,12 +132,215 @@ class InitWindow(Screen):
 
 class WorkshopWindow(Screen):
 
+    hair = ObjectProperty(None)
+    skin = ObjectProperty(None)
+    mouth = ObjectProperty(None)
+    beard = ObjectProperty(None)
+    back = ObjectProperty(None)
+    eyes = ObjectProperty(None)
+
+    layerList = list()
+    layerList.append(hair)
+    layerList.append(skin)
+    layerList.append(mouth)
+    layerList.append(beard)
+    layerList.append(back)
+    layerList.append(eyes)
+
     def __init__(self, **kwargs):
         super(WorkshopWindow,self).__init__(**kwargs)
+        self.hair.color = (0.8, 0.8, 0.0, 1.0)
+        self.skin.color = (0.8, 0.8, 0.0, 1.0)
+        self.mouth.color = (0.8, 0.8, 0.0, 1.0)
+        self.beard.color = (0.8, 0.8, 0.0, 1.0)
+        self.back.color = (0.8, 0.8, 0.0, 1.0)
+        self.eyes.color = (0.8, 0.8, 0.0, 1.0)
 
         #implement initial state
 
     #implement buttons
+
+    def Shair(self, instance):
+        curr_layer = "hair"
+        self.hair.background_normal = ""
+        self.hair.background_color = (0.8, 0.8, 0.0, 1.0)
+        self.hair.color = (0.3412, 0.2392, 0.3451, 1)
+
+        self.skin.background_normal = ""
+        self.skin.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.skin.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.mouth.background_normal = ""
+        self.mouth.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.mouth.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.beard.background_normal = ""
+        self.beard.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.beard.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.back.background_normal = ""
+        self.back.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.back.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.eyes.background_normal = ""
+        self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.eyes.color = (0.8, 0.8, 0.0, 1.0)
+
+    def Sskin(self, instance):
+        curr_layer = "skin"
+
+        self.hair.background_normal = ""
+        self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.hair.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.skin.background_normal = ""
+        self.skin.background_color = (0.8, 0.8, 0.0, 1.0)
+        self.skin.color = (0.3412, 0.2392, 0.3451, 1)
+
+        self.mouth.background_normal = ""
+        self.mouth.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.mouth.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.beard.background_normal = ""
+        self.beard.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.beard.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.back.background_normal = ""
+        self.back.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.back.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.eyes.background_normal = ""
+        self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.eyes.color = (0.8, 0.8, 0.0, 1.0)
+
+    def Smouth(self, instance):
+        curr_layer = "mouth"
+        self.hair.background_normal = ""
+        self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.hair.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.skin.background_normal = ""
+        self.skin.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.skin.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.mouth.background_normal = ""
+        self.mouth.background_color = (0.8, 0.8, 0.0, 1.0)
+        self.mouth.color = (0.3412, 0.2392, 0.3451, 1)
+
+        self.beard.background_normal = ""
+        self.beard.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.beard.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.back.background_normal = ""
+        self.back.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.back.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.eyes.background_normal = ""
+        self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.eyes.color = (0.8, 0.8, 0.0, 1.0)
+
+    def Sbeard(self, instance):
+        curr_layer = "beard"
+        self.hair.background_normal = ""
+        self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.hair.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.skin.background_normal = ""
+        self.skin.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.skin.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.mouth.background_normal = ""
+        self.mouth.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.mouth.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.beard.background_normal = ""
+        self.beard.background_color = (0.8, 0.8, 0.0, 1.0)
+        self.beard.color = (0.3412, 0.2392, 0.3451, 1)
+
+        self.back.background_normal = ""
+        self.back.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.back.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.eyes.background_normal = ""
+        self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.eyes.color = (0.8, 0.8, 0.0, 1.0)
+
+    def Sback(self, instance):
+        curr_layer = "back"
+        self.hair.background_normal = ""
+        self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.hair.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.skin.background_normal = ""
+        self.skin.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.skin.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.mouth.background_normal = ""
+        self.mouth.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.mouth.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.beard.background_normal = ""
+        self.beard.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.beard.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.back.background_normal = ""
+        self.back.background_color = (0.8, 0.8, 0.0, 1.0)
+        self.back.color = (0.3412, 0.2392, 0.3451, 1)
+
+        self.eyes.background_normal = ""
+        self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.eyes.color = (0.8, 0.8, 0.0, 1.0)
+
+    def Seyes(self, instance):
+        curr_layer = "eyes"
+        self.hair.background_normal = ""
+        self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.hair.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.skin.background_normal = ""
+        self.skin.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.skin.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.mouth.background_normal = ""
+        self.mouth.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.mouth.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.beard.background_normal = ""
+        self.beard.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.beard.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.back.background_normal = ""
+        self.back.background_color = (0.3412, 0.2392, 0.3451, 1)
+        self.back.color = (0.8, 0.8, 0.0, 1.0)
+
+        self.eyes.background_normal = ""
+        self.eyes.background_color = (0.8, 0.8, 0.0, 1.0)
+        self.eyes.color = (0.3412, 0.2392, 0.3451, 1)
+
+    def colorBox1(self):
+        mod_color = (1.0, 0.0, 0.0)
+        img_reload()
+
+    def colorBox2(self):
+        mod_color = (0.0, 1.0, 0.0)
+        img_reload()
+
+    def colorBox3(self):
+        mod_color = (0.0, 0.0, 1.0)
+        img_reload()
+
+    def colorBox4(self):
+        mod_color = (1.0, 1.0, 0.0)
+        img_reload()
+
+    def colorBox5(self):
+        mod_color = (1.0, 0.0, 1.0)
+        img_reload()
+
+    def colorBox6(self):
+        mod_color = (0.0, 1.0, 1.0)
+        img_reload()
+
 
 class SaveWindow(Screen):
 
@@ -164,6 +369,10 @@ def invalidForm():
 
     pop.open()
 
+def img_reload():
+
+    print("Image Reload hocche")
+
 
 kv = Builder.load_file("wew.kv")
 
@@ -173,7 +382,7 @@ screens = [SaveWindow(name="save"), WorkshopWindow(name="work"),InitWindow(name=
 for screen in screens:
     sm.add_widget(screen)
 
-sm.current = "main"
+sm.current = "work"
 
 
 class MyMainApp(App):
