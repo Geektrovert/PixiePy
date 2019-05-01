@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8494cb2b-5cc8-4226-bd28-f17df1108671" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/1x/down.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/1x/down.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/1x/save.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/1x/save.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/LoginPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/wew.kv" beforeDir="false" afterPath="$PROJECT_DIR$/src/wew.kv" afterDir="false" />
     </list>
@@ -19,12 +17,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
+            <state relative-caret-position="-30" />
           </provider>
         </entry>
       </file>
@@ -61,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LoginPage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="173" column="42" selection-start-line="173" selection-start-column="42" selection-end-line="173" selection-end-column="42" />
+            <state relative-caret-position="395">
+              <caret line="604" column="32" selection-start-line="604" selection-start-column="32" selection-end-line="604" selection-end-column="32" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -73,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/wew.kv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="484" column="14" lean-forward="true" selection-start-line="484" selection-start-column="14" selection-end-line="484" selection-end-column="14" />
+            <state relative-caret-position="394">
+              <caret line="348" column="53" lean-forward="true" selection-start-line="348" selection-start-column="53" selection-end-line="348" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -100,12 +93,26 @@
       <find>apend</find>
       <find>STYLE</find>
       <find>cloth</find>
+      <find>colorPick</find>
+      <find>Lable</find>
+      <find>label</find>
+      <find>visible</find>
+      <find>colorPickerLabel</find>
+      <find>curr_color</find>
+      <find>widget(B</find>
+      <find>gallery</find>
+      <find>style</find>
+      <find>id: sty</find>
+      <find>curr_layer</find>
     </findStrings>
     <replaceStrings>
       <replace>color=</replace>
       <replace>appent</replace>
       <replace>append</replace>
       <replace>back</replace>
+      <replace>label</replace>
+      <replace>Label</replace>
+      <replace>opacity</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -120,8 +127,8 @@
         <option value="$PROJECT_DIR$/src/data_reader.py" />
         <option value="$PROJECT_DIR$/src/generator.py" />
         <option value="$PROJECT_DIR$/src/test.py" />
-        <option value="$PROJECT_DIR$/src/LoginPage.py" />
         <option value="$PROJECT_DIR$/src/wew.kv" />
+        <option value="$PROJECT_DIR$/src/LoginPage.py" />
       </list>
     </option>
   </component>
@@ -329,7 +336,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556716171729</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UI 3?">
+      <created>1556735345129</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556735345129</updated>
+    </task>
+    <task id="LOCAL-00008" summary="UI 3">
+      <created>1556738233970</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1556738233970</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -362,7 +383,9 @@
     <MESSAGE value="gallery" />
     <MESSAGE value="gallery 2?" />
     <MESSAGE value="basically the UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="basically the UI" />
+    <MESSAGE value="UI 3?" />
+    <MESSAGE value="UI 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI 3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/canvas.py" />
@@ -419,12 +442,7 @@
     <entry file="file://$PROJECT_DIR$/src/test.py" />
     <entry file="file://$PROJECT_DIR$/src/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-30" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/generator.py">
@@ -454,20 +472,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/LoginPage.py">
+    <entry file="file://$PROJECT_DIR$/src/wew.kv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="173" column="42" selection-start-line="173" selection-start-column="42" selection-end-line="173" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="394">
+          <caret line="348" column="53" lean-forward="true" selection-start-line="348" selection-start-column="53" selection-end-line="348" selection-end-column="53" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wew.kv">
+    <entry file="file://$PROJECT_DIR$/src/LoginPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="484" column="14" lean-forward="true" selection-start-line="484" selection-start-column="14" selection-end-line="484" selection-end-column="14" />
+        <state relative-caret-position="395">
+          <caret line="604" column="32" selection-start-line="604" selection-start-column="32" selection-end-line="604" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

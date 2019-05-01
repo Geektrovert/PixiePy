@@ -10,18 +10,16 @@ from kivy.core.window import Window
 
 global_user = ""
 curr_layer = ""
-curr_style = 0
-head_style = 0
-head_color = 0
+
+skin_color = (0.0, 0.0, 0.0, 1.0)
 mouth_style = 0
 hair_style = 0
-hair_color = 0
-back_style = 0
-back_color = 0
+hair_color = (0.0, 0.0, 0.0, 1.0)
+back_color = (0.0, 0.0, 0.0, 1.0)
 beard_style = 0
-beard_color = 0
+beard_color = (0.0, 0.0, 0.0, 1.0)
 
-curr_color = (0.0, 0.0, 0.0)
+
 
 class CreateAccountWindow(Screen):
     namee = ObjectProperty(None)
@@ -182,6 +180,8 @@ class WorkshopWindow(Screen):
         self.back.color = (0.8, 0.8, 0.0, 1.0)
         self.eyes.color = (0.8, 0.8, 0.0, 1.0)
 
+
+
         #implement initial state
 
     #implement buttons
@@ -237,6 +237,10 @@ class WorkshopWindow(Screen):
         self.eyes.background_normal = ""
         self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
         self.eyes.color = (0.8, 0.8, 0.0, 1.0)
+
+        for i in range(3):
+            bubutton = Button(background_normal="temp.png", id = str(i), on_press = self.find_style)
+            self.style.add_widget(bubutton)
 
     def Sskin(self, instance):
         self.box1.background_normal = ""
@@ -374,6 +378,10 @@ class WorkshopWindow(Screen):
         self.colorPickerBox.opacity = 0
         self.colorLabel.opacity = 0
 
+        for i in range(3):
+            bubutton = Button(background_normal="temp.png", id = str(i), on_press = self.find_style)
+            self.style.add_widget(bubutton)
+
     def Sbeard(self, instance):
         self.box1.background_normal = ""
         self.box1.background_color = (1.0, 0, 0.0, 1.0)
@@ -426,6 +434,10 @@ class WorkshopWindow(Screen):
         self.eyes.background_normal = ""
         self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
         self.eyes.color = (0.8, 0.8, 0.0, 1.0)
+
+        for i in range(3):
+            bubutton = Button(background_normal="temp.png", id = str(i), on_press = self.find_style)
+            self.style.add_widget(bubutton)
 
     def Sback(self, instance):
         self.box1.background_normal = ""
@@ -480,6 +492,9 @@ class WorkshopWindow(Screen):
         self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
         self.eyes.color = (0.8, 0.8, 0.0, 1.0)
 
+        self.styleLabel.opacity = 0
+        self.styleBox.opacity = 0
+
     def Seyes(self, instance):
         self.box1.background_normal = ""
         self.box1.background_color = (1.0, 0, 0.0, 1.0)
@@ -533,39 +548,61 @@ class WorkshopWindow(Screen):
         self.eyes.background_color = (0.8, 0.8, 0.0, 1.0)
         self.eyes.color = (0.3412, 0.2392, 0.3451, 1)
 
+        for i in range(3):
+            bubutton = Button(background_normal="temp.png", id = str(i), on_press = self.find_style)
+            self.style.add_widget(bubutton)
+
     def colorBox1(self, instance):
         mod_color = instance.background_color
+        upd_color(mod_color)
 
         img_reload()
 
     def colorBox2(self, instance):
         mod_color = instance.background_color
-
+        upd_color(mod_color)
         img_reload()
 
     def colorBox3(self, instance):
         mod_color = instance.background_color
-
+        upd_color(mod_color)
         img_reload()
 
     def colorBox4(self, instance):
         mod_color = instance.background_color
-
+        upd_color(mod_color)
         img_reload()
 
     def colorBox5(self, instance):
         mod_color = instance.background_color
-
+        upd_color(mod_color)
         img_reload()
 
     def colorBox6(self, instance):
         mod_color = instance.background_color
-
+        upd_color(mod_color)
         img_reload()
 
     def colorSelected(self):
         pass
 
+    def find_style(self, instance):
+        if curr_layer == "hair":
+            hair_style = instance.id
+
+        if curr_layer == "mouth":
+            mouth_style = instance.id
+
+        if curr_layer == "beard":
+            beard_style = instance.id
+
+        if curr_layer == "eyes":
+            eyes_style = instance.id
+
+    def upd_color(self, cocolor):
+
+        if curr_layer == "hair":
+            hair_color = cocolor
 
 class SaveWindow(Screen):
 
