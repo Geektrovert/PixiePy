@@ -559,33 +559,33 @@ class WorkshopWindow(Screen):
 
     def colorBox1(self, instance):
         mod_color = instance.background_color
-        upd_color(mod_color)
+        self.upd_color(mod_color)
 
         img_reload()
 
     def colorBox2(self, instance):
         mod_color = instance.background_color
-        upd_color(mod_color)
+        self.upd_color(mod_color)
         img_reload()
 
     def colorBox3(self, instance):
         mod_color = instance.background_color
-        upd_color(mod_color)
+        self.upd_color(mod_color)
         img_reload()
 
     def colorBox4(self, instance):
         mod_color = instance.background_color
-        upd_color(mod_color)
+        self.upd_color(mod_color)
         img_reload()
 
     def colorBox5(self, instance):
         mod_color = instance.background_color
-        upd_color(mod_color)
+        self.upd_color(mod_color)
         img_reload()
 
     def colorBox6(self, instance):
         mod_color = instance.background_color
-        upd_color(mod_color)
+        self.upd_color(mod_color)
         img_reload()
 
     def colorSelected(self):
@@ -644,6 +644,7 @@ def invalidForm():
 
 def img_reload():
     blueprint_data = load_data.get_data()
+    style_selector.blueprint_data = blueprint_data
     style_selector.generate(blueprint_data, skin_color, mouth_style, hair_style, hair_color, back_color, beard_style, beard_color, eyes_color, eyes_style)
 
 
