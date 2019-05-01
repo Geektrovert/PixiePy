@@ -15,13 +15,13 @@ global_user = ""
 curr_layer = ""
 
 skin_color = (0.0, 0.0, 0.0, 1.0)
-mouth_style = 0
-hair_style = 0
+mouth_style = 1
+hair_style = 1
 hair_color = (0.0, 0.0, 0.0, 1.0)
 back_color = (0.0, 0.0, 0.0, 1.0)
-beard_style = 0
+beard_style = 1
 beard_color = (0.0, 0.0, 0.0, 1.0)
-eyes_style = 0
+eyes_style = 1
 eyes_color = (0.0, 0.0, 0.0, 1.0)
 
 
@@ -593,27 +593,39 @@ class WorkshopWindow(Screen):
 
     def find_style(self, instance):
         if curr_layer == "hair":
+            global hair_style
             hair_style = instance.id
 
         if curr_layer == "mouth":
+            global mouth_style
             mouth_style = instance.id
 
         if curr_layer == "beard":
+            global beard_style
             beard_style = instance.id
 
         if curr_layer == "eyes":
+            global eyes_style
             eyes_style = instance.id
+
+        img_reload()
 
     def upd_color(self, cocolor):
 
         if curr_layer == "hair":
+            global hair_color
             hair_color = cocolor
         if curr_layer == "beard":
+            global beard_color
             beard_color = cocolor
         if curr_layer == "eyes":
+            global eyes_color
             eyes_color = cocolor
         if curr_layer == "back":
+            global back_color
             back_color = cocolor
+
+        print(cocolor)
 
 class SaveWindow(Screen):
 
