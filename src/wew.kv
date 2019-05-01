@@ -513,6 +513,11 @@
                 on_release:
                     root.logOut()
 
+            AsyncImage:
+                source: "temp.png"
+                size_hint: 0.8, 0.8
+                pos_hint: {"x":0.1, "y": 0.2}
+
 
 
         FloatLayout:
@@ -533,8 +538,8 @@
                         width: 2
                         rectangle: self.x, self.y, self.width, self.height
 
-                size_hint: 0.7, 0.5
-                pos_hint: {"x":0.15, "y":0.15}
+                size_hint: 0.7, 0.7
+                pos_hint: {"x":0.15, "y":0.05}
 
                 ScrollView:
                     GridLayout:

@@ -173,7 +173,7 @@ screens = [SaveWindow(name="save"), WorkshopWindow(name="work"),InitWindow(name=
 for screen in screens:
     sm.add_widget(screen)
 
-sm.current = "save"
+sm.current = "main"
 
 
 class MyMainApp(App):
