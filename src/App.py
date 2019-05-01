@@ -12,18 +12,6 @@ from src import load_data
 from src import style_selector
 
 global_user = ""
-curr_layer = ""
-
-skin_color = (0.0, 1.0, 1.0, 1.0)
-mouth_style = 1
-hair_style = 1
-hair_color = (1.0, 0.0, 1.0, 1.0)
-back_color = (1.0, 1.0, 0.0, 1.0)
-beard_style = 1
-beard_color = (1.0, 0.5, 0.5, 1.0)
-eyes_style = 1
-eyes_color = (0.5, 0.5, 0.0, 1.0)
-
 
 
 class CreateAccountWindow(Screen):
@@ -218,7 +206,8 @@ class WorkshopWindow(Screen):
         self.styleLabel.opacity = 1
         self.styleBox.opacity = 1
 
-        curr_layer = "hair"
+
+        style_selector.curr_layer = "hair"
         self.hair.background_normal = ""
         self.hair.background_color = (0.8, 0.8, 0.0, 1.0)
         self.hair.color = (0.3412, 0.2392, 0.3451, 1)
@@ -274,7 +263,7 @@ class WorkshopWindow(Screen):
         self.styleLabel.opacity = 1
         self.styleBox.opacity = 1
 
-        curr_layer = "skin"
+        style_selector.curr_layer = "skin"
 
         self.hair.background_normal = ""
         self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
@@ -352,7 +341,7 @@ class WorkshopWindow(Screen):
         self.styleLabel.opacity = 1
         self.styleBox.opacity = 1
 
-        curr_layer = "mouth"
+        style_selector.curr_layer = "mouth"
         self.hair.background_normal = ""
         self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
         self.hair.color = (0.8, 0.8, 0.0, 1.0)
@@ -414,7 +403,7 @@ class WorkshopWindow(Screen):
         self.styleLabel.opacity = 1
         self.styleBox.opacity = 1
 
-        curr_layer = "beard"
+        style_selector.curr_layer = "beard"
 
         self.hair.background_normal = ""
         self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
@@ -471,7 +460,7 @@ class WorkshopWindow(Screen):
         self.styleLabel.opacity = 1
         self.styleBox.opacity = 1
 
-        curr_layer = "back"
+        style_selector.curr_layer = "back"
 
         self.hair.background_normal = ""
         self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
@@ -527,7 +516,7 @@ class WorkshopWindow(Screen):
         self.styleLabel.opacity = 1
         self.styleBox.opacity = 1
 
-        curr_layer = "eyes"
+        style_selector.curr_layer = "eyes"
 
         self.hair.background_normal = ""
         self.hair.background_color = (0.3412, 0.2392, 0.3451, 1)
@@ -592,39 +581,39 @@ class WorkshopWindow(Screen):
         pass
 
     def find_style(self, instance):
-        if curr_layer == "hair":
-            global hair_style
-            hair_style = instance.id
+        instance.id = str(int(instance.id) + 1)
 
-        if curr_layer == "mouth":
-            global mouth_style
-            mouth_style = instance.id
+        if style_selector.curr_layer == "hair":
+            style_selector.hair_style = instance.id
 
-        if curr_layer == "beard":
-            global beard_style
-            beard_style = instance.id
+        if style_selector.curr_layer == "mouth":
+            style_selector. mouth_style = instance.id
 
-        if curr_layer == "eyes":
-            global eyes_style
-            eyes_style = instance.id
+        if style_selector.curr_layer == "beard":
+            style_selector.beard_style = instance.id
+
+        if style_selector.curr_layer == "eyes":
+            style_selector.eyes_style = instance.id
+
+        print("    ", style_selector.mouth_style)
+        print("    ", style_selector.hair_style)
+        print("    ", style_selector.beard_style)
+        print("    ", style_selector.eyes_style)
+        print("    ", instance.id)
 
         img_reload()
 
 
     def upd_color(self, cocolor):
 
-        if curr_layer == "hair":
-            global hair_color
-            hair_color = cocolor
-        if curr_layer == "beard":
-            global beard_color
-            beard_color = cocolor
-        if curr_layer == "eyes":
-            global eyes_color
-            eyes_color = cocolor
-        if curr_layer == "back":
-            global back_color
-            back_color = cocolor
+        if style_selector.curr_layer == "hair":
+            style_selector.hair_color = cocolor
+        if style_selector.curr_layer == "beard":
+            style_selector.beard_color = cocolor
+        if style_selector.curr_layer == "eyes":
+            style_selector.eyes_color = cocolor
+        if style_selector.curr_layer == "back":
+            style_selector.back_color = cocolor
 
         print(cocolor)
 
@@ -659,8 +648,7 @@ def img_reload():
     blueprint_data = load_data.get_data()
     style_selector.blueprint_data = blueprint_data
 
-    style_selector.generate(blueprint_data, skin_color, mouth_style, hair_style, hair_color, back_color, beard_style, beard_color, eyes_color, eyes_style)
-
+    style_selector.generate()
 
 kv = Builder.load_file("wew.kv")
 

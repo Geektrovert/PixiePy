@@ -4,8 +4,9 @@
     <list default="true" id="8494cb2b-5cc8-4226-bd28-f17df1108671" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wew.kv" beforeDir="false" afterPath="$PROJECT_DIR$/wew.kv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style_selector.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/style_selector.py" afterDir="false" />
     </list>
+    <list id="588bccc4-7554-4650-a9fa-ccb947e248f4" name="Revert: " comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="611" column="12" selection-start-line="611" selection-start-column="12" selection-end-line="611" selection-end-column="12" />
+            <state relative-caret-position="214">
+              <caret line="601" column="34" selection-start-line="601" selection-start-column="34" selection-end-line="601" selection-end-column="34" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -57,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/style_selector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            <state relative-caret-position="45">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -104,6 +105,7 @@
       <replace>label</replace>
       <replace>Label</replace>
       <replace>opacity</replace>
+      <replace>style_selector.curr_layer</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -121,6 +123,7 @@
         <option value="$PROJECT_DIR$/src/wew.kv" />
         <option value="$PROJECT_DIR$/src/LoginPage.py" />
         <option value="$PROJECT_DIR$/wew.kv" />
+        <option value="$PROJECT_DIR$/src/style_selector.py" />
         <option value="$PROJECT_DIR$/src/App.py" />
       </list>
     </option>
@@ -282,6 +285,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="8494cb2b-5cc8-4226-bd28-f17df1108671" name="Default Changelist" comment="" />
+      <changelist id="588bccc4-7554-4650-a9fa-ccb947e248f4" name="Revert: " comment="" />
       <created>1548863117601</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -350,14 +354,21 @@
       <option name="project" value="LOCAL" />
       <updated>1556740957924</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="buggo">
+      <created>1556751554800</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556751554800</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1373" height="785" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984756" visible="true" weight="0.24962963" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984756" visible="true" weight="0.24962963" />
       <window_info id="Structure" order="1" sideWeight="0.5015244" side_tool="true" weight="0.24962963" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -367,7 +378,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3292683" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074077" side_tool="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3292683" />
@@ -386,7 +397,8 @@
     <MESSAGE value="UI 3?" />
     <MESSAGE value="UI 3" />
     <MESSAGE value="style + color extract" />
-    <option name="LAST_COMMIT_MESSAGE" value="style + color extract" />
+    <MESSAGE value="buggo" />
+    <option name="LAST_COMMIT_MESSAGE" value="buggo" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/canvas.py" />
@@ -499,8 +511,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/style_selector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state relative-caret-position="45">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -509,8 +521,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="611" column="12" selection-start-line="611" selection-start-column="12" selection-end-line="611" selection-end-column="12" />
+        <state relative-caret-position="214">
+          <caret line="601" column="34" selection-start-line="601" selection-start-column="34" selection-end-line="601" selection-end-column="34" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>

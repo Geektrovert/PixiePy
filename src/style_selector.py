@@ -1,6 +1,17 @@
 from PIL import Image
 from math import ceil
 
+curr_layer = ""
+skin_color = (0.0, 1.0, 1.0, 1.0)
+mouth_style = 1
+hair_style = 1
+hair_color = (1.0, 0.0, 1.0, 1.0)
+back_color = (1.0, 1.0, 0.0, 1.0)
+beard_style = 1
+beard_color = (1.0, 0.5, 0.5, 1.0)
+eyes_style = 1
+eyes_color = (0.5, 0.5, 0.0, 1.0)
+
 img = Image.new('RGB', (256, 256), "WHITE")
 pixels = img.load()
 blueprint_data = []
@@ -63,17 +74,16 @@ def mouth(mouth_style):
             if blueprint[i][j] == '1':
                 pixels[i,j] = tuple([255, 255, 255])
 
-def generate(data, skin_color, mouth_style, hair_style, hair_color, back_color, beard_style, beard_color, eye_color, eye_style):
+def generate():
     print('---------------')
     print(hair_style)
-    print(eye_style)
+    print(eyes_style)
     print(beard_style)
     print(mouth_style)
-    blueprint_data = data
     background(back_color)
     skin(skin_color)
     hair(hair_style, hair_color)
-    eye(eye_style, eye_color)
+    eye(eyes_style, eyes_color)
     beard(beard_style, beard_color)
     mouth(mouth_style)
     img.show()
