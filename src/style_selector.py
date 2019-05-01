@@ -1,5 +1,6 @@
 from PIL import Image
 from math import ceil
+import os
 
 curr_layer = ""
 skin_color = (0.0, 1.0, 1.0, 1.0)
@@ -16,6 +17,7 @@ img = Image.new('RGB', (256, 256), "WHITE")
 pixels = img.load()
 blueprint_data = []
 
+
 def background(back_color):
     back_color = [int(ceil(color*255)) for color in back_color]
     back_color = back_color[0:3]
@@ -23,6 +25,7 @@ def background(back_color):
     for i in range(256):
         for j in range(256):
             pixels[i, j] = back_color
+
 
 def skin(skin_color):
     skin_color = [int(ceil(color*255)) for color in skin_color]
@@ -47,6 +50,7 @@ def eye(eye_style, eye_color):
             elif blueprint[i][j] == 2:
                 pixels[i, j] = tuple([255, 255, 255])
 
+
 def hair(hair_style, hair_color):
     hair_color = [int(ceil(color*255)) for color in hair_color]
     hair_color = hair_color[0:3]
@@ -55,7 +59,8 @@ def hair(hair_style, hair_color):
     for i in range(256):
         for j in range(256):
             if blueprint[i][j] == '1':
-                pixels[i,j] = hair_color
+                pixels[i, j] = hair_color
+
 
 def beard(beard_style, beard_color):
     beard_color = [int(ceil(color*255)) for color in beard_color]
@@ -65,25 +70,26 @@ def beard(beard_style, beard_color):
     for i in range(256):
         for j in range(256):
             if blueprint[i][j] == '1':
-                pixels[i,j] = beard_color
+                pixels[i, j] = beard_color
+
 
 def mouth(mouth_style):
     blueprint = blueprint_data['Mouth' + str(mouth_style)]
     for i in range(256):
         for j in range(256):
             if blueprint[i][j] == '1':
-                pixels[i,j] = tuple([255, 255, 255])
+                pixels[i, j] = tuple([255, 255, 255])
+
+
+def save_image(name):
+    img.save(os.path.join(os.getcwd(), str(name) + ".png"), "png")
+
 
 def generate():
-    print('---------------')
-    print(hair_style)
-    print(eyes_style)
-    print(beard_style)
-    print(mouth_style)
     background(back_color)
     skin(skin_color)
     hair(hair_style, hair_color)
     eye(eyes_style, eyes_color)
     beard(beard_style, beard_color)
     mouth(mouth_style)
-    img.show()
+    save_image('temp')
