@@ -20,8 +20,9 @@ def skin(skin_color):
     blueprint = blueprint_data['Face']
     for i in range(256):
         for j in range(256):
-            if blueprint[i][j] == 0:
+            if blueprint[i][j] == '1':
                 pixels[i, j] = skin_color
+
 
 def eye(eye_style, eye_color):
     eye_color = [int(ceil(color*255)) for color in eye_color]
@@ -30,10 +31,10 @@ def eye(eye_style, eye_color):
     blueprint = blueprint_data['Eyes'+str(eye_style)]
     for i in range(256):
         for j in range(256):
-            if blueprint[i][j] == 0:
+            if blueprint[i][j] == '1':
                 pixels[i, j] = eye_color
             elif blueprint[i][j] == 2:
-                pixels[i, j] = [255, 255, 255]
+                pixels[i, j] = tuple([255, 255, 255])
 
 def hair(hair_style, hair_color):
     hair_color = [int(ceil(color*255)) for color in hair_color]
@@ -42,7 +43,7 @@ def hair(hair_style, hair_color):
     blueprint = blueprint_data['Hair' + str(hair_style)]
     for i in range(256):
         for j in range(256):
-            if blueprint[i][j] == 0:
+            if blueprint[i][j] == '1':
                 pixels[i,j] = hair_color
 
 def beard(beard_style, beard_color):
@@ -52,17 +53,22 @@ def beard(beard_style, beard_color):
     blueprint = blueprint_data['Beard' + str(beard_style)]
     for i in range(256):
         for j in range(256):
-            if blueprint[i][j] == 0:
+            if blueprint[i][j] == '1':
                 pixels[i,j] = beard_color
 
 def mouth(mouth_style):
     blueprint = blueprint_data['Mouth' + str(mouth_style)]
     for i in range(256):
         for j in range(256):
-            if blueprint[i][j] == 0:
-                pixels[i,j] = [255, 255, 255]
+            if blueprint[i][j] == '1':
+                pixels[i,j] = tuple([255, 255, 255])
 
 def generate(data, skin_color, mouth_style, hair_style, hair_color, back_color, beard_style, beard_color, eye_color, eye_style):
+    print('---------------')
+    print(hair_style)
+    print(eye_style)
+    print(beard_style)
+    print(mouth_style)
     blueprint_data = data
     background(back_color)
     skin(skin_color)

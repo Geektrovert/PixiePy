@@ -610,7 +610,6 @@ class WorkshopWindow(Screen):
 
         img_reload()
 
-        img_reload()
 
     def upd_color(self, cocolor):
 
