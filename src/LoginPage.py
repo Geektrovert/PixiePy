@@ -4,6 +4,8 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.properties import ObjectProperty
 from kivy.uix.popup import Popup
 from kivy.uix.label import Label
+from kivy.uix.button import Button
+from kivy.uix.image import AsyncImage
 from kivy.core.window import Window
 
 global_user = ""
@@ -78,6 +80,36 @@ class LoginWindow(Screen):
 
 class MainWindow(Screen):
 
+    gallery = ObjectProperty(None)
+
+    def __init__(self, **kwargs):
+        super(MainWindow,self).__init__(**kwargs)
+
+        '''
+        file_read = open("DB/User_Image.txt", "r")
+        strr = file_read.readlines()
+        file_read.close();
+        collention = list()
+        for curr_str in strr:
+            strList = curr_str.split()
+            if(strList[0] == global_user):
+                collention.add(strList[1])
+        '''
+
+        for i in range(5):
+            self.gallery.add_widget(Button(background_normal = "temp.png"))
+
+        '''for curr_str in collention:
+            dir = "Collections/" + curr_str + ".csv"
+
+            #create temp.png from data
+
+            self.gallery.add_widget(AsyncImage(source="temp.png"))'''
+
+    def createNew(self):
+        #implement create window
+        return 0
+
     def logOut(self):
         global_user = ""
         sm.current = "login"
@@ -124,7 +156,7 @@ screens = [InitWindow(name="init"),LoginWindow(name="login"), CreateAccountWindo
 for screen in screens:
     sm.add_widget(screen)
 
-sm.current = "init"
+sm.current = "main"
 
 
 class MyMainApp(App):

@@ -160,7 +160,7 @@
             pos_hint:{"x":0.4,"y":0.6}
             size_hint: 0.25, 0.12
             font_size: (root.width**2 + root.height**2) / 18**4
-            background_normal: "Assets/1x/Asset 1.png"
+            background_normal: "Assets/4x/Asset 1@4x.png"
             on_release:
                 root.actBtn1()
 
@@ -169,16 +169,16 @@
             pos_hint:{"x":0.4,"y":0.4}
             size_hint: 0.25, 0.12
             font_size: (root.width**2 + root.height**2) / 18**4
-            background_normal: "Assets/1x/Asset 2.png"
+            background_normal: "Assets/4x/Asset 2@4x.png"
             on_release:
                 root.actBtn2()
 
 
 
 <MainWindow>:
-    n: n
-    email: email
-    created:created
+
+    name: 'main'
+    gallery: gallery
 
     canvas.before:
         Color:
@@ -187,29 +187,64 @@
             pos: self.pos
             size: self.size
 
-    FloatLayout:
-        Label:
-            id: n
-            pos_hint:{"x": 0.1, "top":0.9}
-            size_hint:0.8, 0.2
-            text: "Account Name: "
+    BoxLayout:
 
-        Label:
-            id: email
-            pos_hint:{"x": 0.1, "top":0.7}
-            size_hint:0.8, 0.2
-            text: "Email: "
+        orientation: 'horizontal'
+        padding: 10
 
-        Label:
-            id: created
-            pos_hint:{"x": 0.1, "top":0.5}
-            size_hint:0.8, 0.2
-            text: "Created: "
+        FloatLayout:
 
-        Button:
-            pos_hint:{"x":0.2, "y": 0.1}
-            size_hint:0.6,0.2
-            text: "Log Out"
-            on_release:
-                app.root.current = "login"
-                root.manager.transition.direction = "down"
+            size_hint: 0.25, 1.0
+            canvas.before:
+                Color:
+                    rgba: 0.8, 0.8, 0, 1
+                Line:
+                    width: 2
+                    rectangle: root.width/4, self.y*5, 1, self.height*7/8
+
+            Button:
+                pos_hint: {"x":0.1, "y":0.25}
+                size_hint: 0.8 , 0.12
+                background_normal: "Assets/1x/Asset 14.png"
+                on_release:
+                    root.createNew()
+
+            Button:
+                pos_hint: {"x":0.1, "y":0.1}
+                size_hint: 0.8 , 0.12
+                background_normal: "Assets/1x/Asset 15.png"
+                on_release:
+                    root.logOut()
+
+
+
+        FloatLayout:
+
+            size_hint: 0.75, 1.0
+
+            AsyncImage:
+                source: "Assets/4x/Asset 6@4x.png"
+                size_hint: 0.5, 0.3
+                pos_hint: {"x":0.25, "y": 0.7}
+
+            BoxLayout:
+
+                canvas.before:
+                    Color:
+                        rgba: 1.0, 1.0, 1.0, 1
+                    Line:
+                        width: 2
+                        rectangle: self.x, self.y, self.width, self.height
+
+                size_hint: 0.7, 0.5
+                pos_hint: {"x":0.15, "y":0.15}
+
+                ScrollView:
+                    GridLayout:
+                        id: gallery
+                        size_hint_x: None
+                        rows: 1
+                        col_default_width: root.width*0.4
+                        width: self.minimum_width
+                        spacing: 15
+                        padding: 10
