@@ -10,8 +10,7 @@ from kivy.core.window import Window
 
 from src import load_data
 from src import style_selector
-
-global_user = ""
+from src import globul
 
 
 class CreateAccountWindow(Screen):
@@ -20,7 +19,8 @@ class CreateAccountWindow(Screen):
     password = ObjectProperty(None)
 
     def submit(self):
-        if self.namee.text != "" and self.email.text != "" and self.email.text.count("@") == 1 and self.email.text.count(".") > 0:
+        if self.namee.text != "" and self.email.text != "" and self.email.text.count(
+                "@") == 1 and self.email.text.count(".") > 0:
             if self.password.text != "":
                 file_append = open("DB/Users.txt", "a")
                 print(self.namee.text.strip())
@@ -59,18 +59,24 @@ class LoginWindow(Screen):
         flag = 0
         for s_str in strr:
             strList = s_str.split()
-            if(self.email.text == strList[1] and self.password.text == strList[2]):
-                global_user = self.email.text
+            if (self.email.text == strList[1] and self.password.text == strList[2]):
+                globul.global_user = self.email.text
                 flag = 1
                 break
 
-        if(flag == 0):
+        if (flag == 0):
             popup = Popup(title='Oops!',
                           content=Label(text='"No such user"'),
                           size_hint=(None, None), size=(600, 400))
             popup.open()
         else:
+
+            file_append = open("now.txt", "w")
+            file_append.write(globul.global_user)
+            file_append.close()
+
             sm.current = "main"
+            sm.get_screen("main").reload()
 
     def BackBtn(self):
         sm.current = "init"
@@ -81,58 +87,71 @@ class LoginWindow(Screen):
 
 
 class MainWindow(Screen):
-
     gallery = ObjectProperty(None)
 
     def __init__(self, **kwargs):
         super(MainWindow, self).__init__(**kwargs)
 
-        '''
-        file_read = open("DB/User_Image.txt", "r")
+    def reload(self):
+        self.gallery.clear_widgets()
+        file_read = open("DB/Users_images.txt", "r")
         strr = file_read.readlines()
         file_read.close();
         collention = list()
         for curr_str in strr:
             strList = curr_str.split()
-            if(strList[0] == global_user):
-                collention.add(strList[1])
-        '''
+            if strList[0] == globul.global_user:
+                collention.append(strList[1])
 
-        for i in range(5):
-            self.gallery.add_widget(Button(background_normal="temp.png"))
+        for curr_str in collention:
+            # create temp.png from data
 
-        '''for curr_str in collention:
-            dir = "Collections/" + curr_str + ".csv"
+            self.gallery.add_widget(Button(background_normal="saved/" + curr_str))
 
-            #create temp.png from data
-
-            self.gallery.add_widget(AsyncImage(source="temp.png"))'''
 
     def createNew(self):
-        # implement create window
+        print(globul.global_user)
+        sm.current = "work"
+
         return 0
 
     def logOut(self):
-        global_user = ""
+        globul.global_user = "-"
+
+        file_append = open("now.txt", "w")
+        file_append.write(globul.global_user)
+        file_append.close()
+
         sm.current = "login"
 
 
 class InitWindow(Screen):
-
     btn1 = ObjectProperty(None)
     btn2 = ObjectProperty(None)
 
-    def actBtn1(self):
+    def __init__(self, **kwargs):
+        super(InitWindow, self).__init__(**kwargs)
 
-        sm.current = "login"
+
+    def actBtn1(self):
+        file_read = open("now.txt", "r")
+        strr = file_read.readline()
+        print(" -> " + strr + " -> " + "-")
+        if strr != "-\n" and strr != "-":
+            globul.global_user = strr
+            sm.current = "main"
+            sm.get_screen("main").reload()
+
+        else:
+            sm.current = "login"
+
+        file_read.close()
 
     def actBtn2(self):
-
         sm.current = "create"
 
 
 class WorkshopWindow(Screen):
-
     hair = ObjectProperty(None)
     skin = ObjectProperty(None)
     mouth = ObjectProperty(None)
@@ -231,7 +250,7 @@ class WorkshopWindow(Screen):
 
         self.style.clear_widgets()
         for i in range(5):
-            skrra = "samples/Hair" + str(i+1) +".png"
+            skrra = "samples/Hair" + str(i + 1) + ".png"
             bubutton = Button(background_normal=skrra,
                               id=str(i), on_press=self.find_style)
             self.style.add_widget(bubutton)
@@ -578,6 +597,14 @@ class WorkshopWindow(Screen):
         mod_color = instance.background_color
         self.upd_color(mod_color)
 
+    def colorBox7(self, instance):
+        mod_color = instance.background_color
+        self.upd_color(mod_color)
+
+    def colorBox8(self, instance):
+        mod_color = instance.background_color
+        self.upd_color(mod_color)
+
     def colorSelected(self):
         pass
 
@@ -587,7 +614,7 @@ class WorkshopWindow(Screen):
             style_selector.hair_style = str(int(instance.id) + 1)
 
         if style_selector.curr_layer == "mouth":
-            style_selector. mouth_style = str(int(instance.id) + 1)
+            style_selector.mouth_style = str(int(instance.id) + 1)
 
         if style_selector.curr_layer == "beard":
             style_selector.beard_style = str(int(instance.id) + 1)
@@ -609,6 +636,8 @@ class WorkshopWindow(Screen):
             style_selector.eyes_color = cocolor
         if style_selector.curr_layer == "back":
             style_selector.back_color = cocolor
+        if style_selector.curr_layer == "skin":
+            style_selector.skin_color = cocolor
 
         img_reload()
         self.preview.source = "temp.png"
@@ -616,15 +645,29 @@ class WorkshopWindow(Screen):
 
         print(cocolor)
 
+    def gosave(self):
+
+        sm.current = "save"
+        sm.get_screen("save").dimg.reload()
+
 
 class SaveWindow(Screen):
+    size_input = ObjectProperty(None)
+    dimg = ObjectProperty(None)
 
     def __init__(self, **kwargs):
         super(SaveWindow, self).__init__(**kwargs)
 
-        # implement initial state
+    def save(self):
+        setName = self.size_input.text
+        style_selector.save_image_2(setName)
 
-    # implement buttons
+        file_append = open("DB/Users_images.txt", "a")
+        new_str = globul.global_user + " " + setName + ".png"
+        file_append.write(new_str)
+        file_append.close()
+
+        sm.current = "work"
 
 
 class WindowManager(ScreenManager):
@@ -659,12 +702,14 @@ kv = Builder.load_file("wew.kv")
 
 sm = WindowManager()
 
-screens = [SaveWindow(name="save"), WorkshopWindow(name="work"), InitWindow(name="init"), LoginWindow(
-    name="login"), CreateAccountWindow(name="create"), MainWindow(name="main")]
+screens = [SaveWindow(name="save"), WorkshopWindow(name="work"), LoginWindow(
+    name="login"), CreateAccountWindow(name="create"), MainWindow(name="main"), InitWindow(name="init")]
 for screen in screens:
     sm.add_widget(screen)
 
-sm.current = "work"
+sm.current = "init"
+
+img_reload()
 
 
 class MyMainApp(App):

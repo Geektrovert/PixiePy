@@ -3,15 +3,15 @@ from math import ceil
 import os
 
 curr_layer = ""
-skin_color = (0.0, 1.0, 1.0, 1.0)
+skin_color = (0.76, 0.66, 0.62, 1.0)
 mouth_style = 1
-hair_style = 1
-hair_color = (1.0, 0.0, 1.0, 1.0)
-back_color = (1.0, 1.0, 0.0, 1.0)
-beard_style = 1
-beard_color = (1.0, 0.5, 0.5, 1.0)
+hair_style = 5
+hair_color = (0.0, 0.0, 0.0, 0.0)
+back_color = (1.0, 1.0, 1.0, 1.0)
+beard_style = 3
+beard_color = (0.0, 0.0, 0.0, 1.0)
 eyes_style = 1
-eyes_color = (0.5, 0.5, 0.0, 1.0)
+eyes_color = (0.0, 0.0, 0.0, 1.0)
 
 img = Image.new('RGB', (256, 256), "WHITE")
 pixels = img.load()
