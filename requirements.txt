@@ -15,3 +15,4 @@ pygments==2.3.1           # via kivy
 requests==2.21.0          # via kivy-garden
 urllib3==1.24.2           # via requests
 imagehash==4.0.0
+cython==0.29.7
