@@ -2,9 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8494cb2b-5cc8-4226-bd28-f17df1108671" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/samples/Beard1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Beard2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Beard3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Eyes1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Eyes2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Hair1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Hair2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Hair3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Hair4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Hair5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Mouth1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Mouth2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Mouth3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Mouth4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/Mouth5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saved/temp.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style_selector.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/style_selector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp.png" beforeDir="false" afterPath="$PROJECT_DIR$/temp.png" afterDir="false" />
     </list>
     <list id="588bccc4-7554-4650-a9fa-ccb947e248f4" name="Revert: " comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,12 +40,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/generator.py">
+        <entry file="file://$PROJECT_DIR$/src/style_selector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="529">
+              <caret line="98" column="35" lean-forward="true" selection-start-line="98" selection-start-column="35" selection-end-line="99" selection-end-column="22" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="601" column="34" selection-start-line="601" selection-start-column="34" selection-end-line="601" selection-end-column="34" />
+            <state relative-caret-position="364">
+              <caret line="661" column="70" selection-start-line="661" selection-start-column="70" selection-end-line="661" selection-end-column="70" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -49,20 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wew.kv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="315" column="29" lean-forward="true" selection-start-line="315" selection-start-column="29" selection-end-line="315" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/style_selector.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1980">
+              <caret line="315" column="29" selection-start-line="315" selection-start-column="29" selection-end-line="315" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -96,6 +101,7 @@
       <find>style</find>
       <find>id: sty</find>
       <find>curr_layer</find>
+      <find>&quot;.jpg&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>color=</replace>
@@ -106,6 +112,7 @@
       <replace>Label</replace>
       <replace>opacity</replace>
       <replace>style_selector.curr_layer</replace>
+      <replace>&quot;.png&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -145,6 +152,16 @@
             <path>
               <item name="PixiePy" type="b2602c69:ProjectViewProjectNode" />
               <item name="PixiePy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PixiePy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PixiePy" type="462c0819:PsiDirectoryNode" />
+              <item name="blueprints" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PixiePy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PixiePy" type="462c0819:PsiDirectoryNode" />
+              <item name="samples" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PixiePy" type="b2602c69:ProjectViewProjectNode" />
@@ -361,14 +378,20 @@
       <option name="project" value="LOCAL" />
       <updated>1556751554800</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="buggo nwe">
+      <created>1556753565403</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1556753565403</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1373" height="785" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4984756" visible="true" weight="0.24962963" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984756" visible="true" weight="0.24962963" />
       <window_info id="Structure" order="1" sideWeight="0.5015244" side_tool="true" weight="0.24962963" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -378,7 +401,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3292683" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3292683" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50074077" side_tool="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3292683" />
@@ -398,7 +421,8 @@
     <MESSAGE value="UI 3" />
     <MESSAGE value="style + color extract" />
     <MESSAGE value="buggo" />
-    <option name="LAST_COMMIT_MESSAGE" value="buggo" />
+    <MESSAGE value="buggo nwe" />
+    <option name="LAST_COMMIT_MESSAGE" value="buggo nwe" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/canvas.py" />
@@ -502,17 +526,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/temp.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/wew.kv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="315" column="29" lean-forward="true" selection-start-line="315" selection-start-column="29" selection-end-line="315" selection-end-column="29" />
+        <state relative-caret-position="1980">
+          <caret line="315" column="29" selection-start-line="315" selection-start-column="29" selection-end-line="315" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/style_selector.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        <state relative-caret-position="529">
+          <caret line="98" column="35" lean-forward="true" selection-start-line="98" selection-start-column="35" selection-end-line="99" selection-end-column="22" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -521,8 +548,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="601" column="34" selection-start-line="601" selection-start-column="34" selection-end-line="601" selection-end-column="34" />
+        <state relative-caret-position="364">
+          <caret line="661" column="70" selection-start-line="661" selection-start-column="70" selection-end-line="661" selection-end-column="70" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>

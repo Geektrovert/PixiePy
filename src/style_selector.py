@@ -85,11 +85,16 @@ def save_image(name):
     img.save(os.path.join(os.getcwd(), str(name) + ".png"), "png")
 
 
+def save_image_2(name):
+    img.save(os.path.join(os.getcwd() + "/saved", str(name) + ".png"), "png")
+
+
 def generate():
+    print(skin_color)
+
     background(back_color)
     skin(skin_color)
     hair(hair_style, hair_color)
     eye(eyes_style, eyes_color)
     beard(beard_style, beard_color)
     mouth(mouth_style)
-    save_image('temp')

@@ -229,8 +229,10 @@ class WorkshopWindow(Screen):
         self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
         self.eyes.color = (0.8, 0.8, 0.0, 1.0)
 
-        for i in range(3):
-            bubutton = Button(background_normal="temp.png",
+        self.style.clear_widgets()
+        for i in range(5):
+            skrra = "samples/Hair" + str(i+1) +".png"
+            bubutton = Button(background_normal=skrra,
                               id=str(i), on_press=self.find_style)
             self.style.add_widget(bubutton)
 
@@ -369,8 +371,10 @@ class WorkshopWindow(Screen):
         self.colorPickerBox.opacity = 0
         self.colorLabel.opacity = 0
 
-        for i in range(3):
-            bubutton = Button(background_normal="temp.png",
+        self.style.clear_widgets()
+        for i in range(5):
+            skrra = "samples/Mouth" + str(i + 1) + ".png"
+            bubutton = Button(background_normal=skrra,
                               id=str(i), on_press=self.find_style)
             self.style.add_widget(bubutton)
 
@@ -427,8 +431,10 @@ class WorkshopWindow(Screen):
         self.eyes.background_color = (0.3412, 0.2392, 0.3451, 1)
         self.eyes.color = (0.8, 0.8, 0.0, 1.0)
 
+        self.style.clear_widgets()
         for i in range(3):
-            bubutton = Button(background_normal="temp.png",
+            skrra = "samples/Beard" + str(i + 1) + ".png"
+            bubutton = Button(background_normal=skrra,
                               id=str(i), on_press=self.find_style)
             self.style.add_widget(bubutton)
 
@@ -541,8 +547,10 @@ class WorkshopWindow(Screen):
         self.eyes.background_color = (0.8, 0.8, 0.0, 1.0)
         self.eyes.color = (0.3412, 0.2392, 0.3451, 1)
 
-        for i in range(3):
-            bubutton = Button(background_normal="temp.png",
+        self.style.clear_widgets()
+        for i in range(2):
+            skrra = "samples/Eyes" + str(i + 1) + ".png"
+            bubutton = Button(background_normal=skrra,
                               id=str(i), on_press=self.find_style)
             self.style.add_widget(bubutton)
 
@@ -550,58 +558,46 @@ class WorkshopWindow(Screen):
         mod_color = instance.background_color
         self.upd_color(mod_color)
 
-        img_reload()
-
     def colorBox2(self, instance):
         mod_color = instance.background_color
         self.upd_color(mod_color)
-        img_reload()
 
     def colorBox3(self, instance):
         mod_color = instance.background_color
         self.upd_color(mod_color)
-        img_reload()
 
     def colorBox4(self, instance):
         mod_color = instance.background_color
         self.upd_color(mod_color)
-        img_reload()
 
     def colorBox5(self, instance):
         mod_color = instance.background_color
         self.upd_color(mod_color)
-        img_reload()
 
     def colorBox6(self, instance):
         mod_color = instance.background_color
         self.upd_color(mod_color)
-        img_reload()
 
     def colorSelected(self):
         pass
 
     def find_style(self, instance):
-        instance.id = str(int(instance.id) + 1)
 
         if style_selector.curr_layer == "hair":
-            style_selector.hair_style = instance.id
+            style_selector.hair_style = str(int(instance.id) + 1)
 
         if style_selector.curr_layer == "mouth":
-            style_selector. mouth_style = instance.id
+            style_selector. mouth_style = str(int(instance.id) + 1)
 
         if style_selector.curr_layer == "beard":
-            style_selector.beard_style = instance.id
+            style_selector.beard_style = str(int(instance.id) + 1)
 
         if style_selector.curr_layer == "eyes":
-            style_selector.eyes_style = instance.id
-
-        print("    ", style_selector.mouth_style)
-        print("    ", style_selector.hair_style)
-        print("    ", style_selector.beard_style)
-        print("    ", style_selector.eyes_style)
-        print("    ", instance.id)
+            style_selector.eyes_style = str(int(instance.id) + 1)
 
         img_reload()
+        self.preview.source = "temp.png"
+        self.preview.reload()
 
     def upd_color(self, cocolor):
 
@@ -613,6 +609,10 @@ class WorkshopWindow(Screen):
             style_selector.eyes_color = cocolor
         if style_selector.curr_layer == "back":
             style_selector.back_color = cocolor
+
+        img_reload()
+        self.preview.source = "temp.png"
+        self.preview.reload()
 
         print(cocolor)
 
@@ -652,6 +652,7 @@ def img_reload():
     style_selector.blueprint_data = blueprint_data
 
     style_selector.generate()
+    style_selector.save_image('temp')
 
 
 kv = Builder.load_file("wew.kv")
