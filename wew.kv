@@ -205,6 +205,8 @@
     box4: box4
     box5: box5
     box6: box6
+    box7: box7
+    box8: box8
 
     canvas.before:
         Color:
@@ -215,11 +217,18 @@
 
     FloatLayout:
 
+        Button:
+            text: "<--"
+            size_hint: 0.1, 0.05
+            pos_hint: {"x": 0.0, "y": 0.95}
+            on_release:
+                root.goback()
+
         Label:
 
             text: "LAYER"
             font_name: "Roboto-Bold"
-            pos_hint: {"x": 0.0, "y": 0.89}
+            pos_hint: {"x": 0.0, "y": 0.88}
             font_size: "25sp"
             size_hint: 0.1, 0.1
             halign: 'left'

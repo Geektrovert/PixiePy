@@ -174,6 +174,8 @@ class WorkshopWindow(Screen):
     box4 = ObjectProperty(None)
     box5 = ObjectProperty(None)
     box6 = ObjectProperty(None)
+    box7 = ObjectProperty(None)
+    box8 = ObjectProperty(None)
 
     layerList = list()
     layerList.append(hair)
@@ -195,6 +197,9 @@ class WorkshopWindow(Screen):
         # implement initial state
 
     # implement buttons
+
+    def goback(self):
+        sm.current = "main"
 
     def Shair(self, instance):
         self.box1.background_normal = ""
@@ -331,6 +336,12 @@ class WorkshopWindow(Screen):
 
         self.box6.background_normal = ""
         self.box6.background_color = (0.62, 0.52, 0.48, 1.0)
+
+        self.box7.background_normal = ""
+        self.box7.background_color = (0.56, 0.46, 0.42, 1.0)
+
+        self.box8.background_normal = ""
+        self.box8.background_color = (0.50, 0.40, 0.36, 1.0)
 
     def Smouth(self, instance):
         self.box1.background_normal = ""
